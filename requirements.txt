@@ -1,0 +1,8 @@
+gepa-ai
+openai
+python-dotenv
+Pillow
+scikit-learn
+pydantic
+PyYAML
+litellm

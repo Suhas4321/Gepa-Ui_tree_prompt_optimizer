@@ -1,0 +1,357 @@
+{
+  "id": "search_results",
+  "type": "Screen",
+  "style": {
+    "display": "flex",
+    "flexDirection": "column",
+    "backgroundColor": "#F5F5F7",
+    "padding": "16px"
+  },
+  "children": [
+    {
+      "id": "header",
+      "type": "AppBar",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "gap": "16px",
+        "marginBottom": "24px"
+      },
+      "children": [
+        {
+          "id": "back_button",
+          "type": "Icon",
+          "style": {
+            "width": "32px",
+            "height": "32px",
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": "50%",
+            "color": "#666666",
+            "padding": "8px"
+          }
+        },
+        {
+          "id": "search_bar",
+          "type": "SearchBar",
+          "style": {
+            "flex": "1",
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": "8px",
+            "border": "2px solid #007AFF",
+            "padding": "12px 16px",
+            "position": "relative"
+          },
+          "children": [
+            {
+              "id": "search_input",
+              "type": "Text",
+              "text": "Hi",
+              "style": {
+                "fontSize": "16px",
+                "color": "#000000"
+              }
+            },
+            {
+              "id": "clear_button",
+              "type": "Icon",
+              "style": {
+                "position": "absolute",
+                "right": "16px",
+                "top": "50%",
+                "transform": "translateY(-50%)",
+                "width": "20px",
+                "height": "20px",
+                "color": "#666666"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "search_status",
+      "type": "Column",
+      "style": {
+        "marginBottom": "32px"
+      },
+      "children": [
+        {
+          "id": "no_results_text",
+          "type": "Text",
+          "text": "No results found for \"Hi\"",
+          "style": {
+            "fontSize": "16px",
+            "fontWeight": "500",
+            "color": "#333333",
+            "marginBottom": "4px"
+          }
+        },
+        {
+          "id": "alternate_results_text",
+          "type": "Text",
+          "text": "Showing results for \"fi\" instead",
+          "style": {
+            "fontSize": "16px",
+            "color": "#666666"
+          }
+        }
+      ]
+    },
+    {
+      "id": "quick_actions_section",
+      "type": "Column",
+      "style": {
+        "marginBottom": "40px"
+      },
+      "children": [
+        {
+          "id": "quick_actions_header",
+          "type": "SectionHeader",
+          "text": "QUICK ACTIONS",
+          "style": {
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "color": "#999999",
+            "marginBottom": "16px",
+            "letterSpacing": "0.5px"
+          }
+        },
+        {
+          "id": "actions_list",
+          "type": "Column",
+          "style": {
+            "gap": "0px"
+          },
+          "children": [
+            {
+              "id": "find_store_action",
+              "type": "Card",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "padding": "16px",
+                "marginBottom": "1px"
+              },
+              "children": [
+                {
+                  "id": "find_store_icon",
+                  "type": "Icon",
+                  "style": {
+                    "width": "40px",
+                    "height": "40px",
+                    "backgroundColor": "#E8E8EA",
+                    "borderRadius": "50%",
+                    "color": "#333333",
+                    "marginRight": "16px"
+                  }
+                },
+                {
+                  "id": "find_store_text",
+                  "type": "Text",
+                  "text": "Find a store",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#000000",
+                    "flex": "1"
+                  }
+                },
+                {
+                  "id": "find_store_arrow",
+                  "type": "Icon",
+                  "style": {
+                    "width": "20px",
+                    "height": "20px",
+                    "color": "#C7C7CC"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "fixed_deposit_action",
+              "type": "Card",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "padding": "16px",
+                "marginBottom": "1px"
+              },
+              "children": [
+                {
+                  "id": "fixed_deposit_icon",
+                  "type": "Icon",
+                  "style": {
+                    "width": "40px",
+                    "height": "40px",
+                    "backgroundColor": "#E8E8EA",
+                    "borderRadius": "50%",
+                    "color": "#333333",
+                    "marginRight": "16px"
+                  }
+                },
+                {
+                  "id": "fixed_deposit_text",
+                  "type": "Text",
+                  "text": "Fixed Deposit",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#000000",
+                    "flex": "1"
+                  }
+                },
+                {
+                  "id": "fixed_deposit_arrow",
+                  "type": "Icon",
+                  "style": {
+                    "width": "20px",
+                    "height": "20px",
+                    "color": "#C7C7CC"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "wifi_settings_action",
+              "type": "Card",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "padding": "16px",
+                "marginBottom": "1px"
+              },
+              "children": [
+                {
+                  "id": "wifi_settings_icon",
+                  "type": "Icon",
+                  "style": {
+                    "width": "40px",
+                    "height": "40px",
+                    "backgroundColor": "#E8E8EA",
+                    "borderRadius": "50%",
+                    "color": "#333333",
+                    "marginRight": "16px"
+                  }
+                },
+                {
+                  "id": "wifi_settings_text",
+                  "type": "Text",
+                  "text": "Wi-Fi Settings",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#000000",
+                    "flex": "1"
+                  }
+                },
+                {
+                  "id": "wifi_settings_arrow",
+                  "type": "Icon",
+                  "style": {
+                    "width": "20px",
+                    "height": "20px",
+                    "color": "#C7C7CC"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "buy_wifi_action",
+              "type": "Card",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "backgroundColor": "#FFFFFF",
+                "padding": "16px"
+              },
+              "children": [
+                {
+                  "id": "buy_wifi_icon",
+                  "type": "Icon",
+                  "style": {
+                    "width": "40px",
+                    "height": "40px",
+                    "backgroundColor": "#E8E8EA",
+                    "borderRadius": "50%",
+                    "color": "#333333",
+                    "marginRight": "16px"
+                  }
+                },
+                {
+                  "id": "buy_wifi_text",
+                  "type": "Text",
+                  "text": "Buy Wi-Fi",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#000000",
+                    "flex": "1"
+                  }
+                },
+                {
+                  "id": "buy_wifi_arrow",
+                  "type": "Icon",
+                  "style": {
+                    "width": "20px",
+                    "height": "20px",
+                    "color": "#C7C7CC"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "help_section",
+      "type": "Card",
+      "style": {
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": "12px",
+        "padding": "20px"
+      },
+      "children": [
+        {
+          "id": "help_title",
+          "type": "Text",
+          "text": "Have a query?",
+          "style": {
+            "fontSize": "18px",
+            "fontWeight": "600",
+            "color": "#000000",
+            "marginBottom": "8px"
+          }
+        },
+        {
+          "id": "help_subtitle",
+          "type": "Text",
+          "text": "Get instant help for \"fi\"",
+          "style": {
+            "fontSize": "16px",
+            "color": "#666666",
+            "marginBottom": "20px"
+          }
+        },
+        {
+          "id": "chat_now_button",
+          "type": "Button",
+          "text": "Chat Now",
+          "style": {
+            "backgroundColor": "#000000",
+            "color": "#FFFFFF",
+            "borderRadius": "8px",
+            "padding": "12px 24px",
+            "fontSize": "16px",
+            "fontWeight": "500",
+            "border": "none"
+          }
+        }
+      ]
+    }
+  ]
+}

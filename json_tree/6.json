@@ -1,0 +1,575 @@
+{
+  "id": "browser_home",
+  "type": "Screen",
+  "style": {
+    "display": "flex",
+    "flexDirection": "column",
+    "backgroundColor": "#1A1A1A"
+  },
+  "children": [
+    {
+      "id": "top_bar",
+      "type": "AppBar",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "backgroundColor": "#2A2A2A",
+        "borderRadius": "25px",
+        "padding": "12px 16px",
+        "margin": "16px"
+      },
+      "children": [
+        {
+          "id": "search_input",
+          "type": "Text",
+          "text": "Search or type URL",
+          "style": {
+            "fontSize": "16px",
+            "color": "#AAAAAA",
+            "flex": "1"
+          }
+        },
+        {
+          "id": "right_icons",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": "12px"
+          },
+          "children": [
+            {
+              "id": "shield_icon",
+              "type": "Icon",
+              "style": {
+                "width": "24px",
+                "height": "24px",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "id": "warning_icon",
+              "type": "Icon",
+              "style": {
+                "width": "24px",
+                "height": "24px",
+                "color": "#FF6B35"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "privacy_stats_card",
+      "type": "Card",
+      "style": {
+        "backgroundColor": "#2A2A2A",
+        "borderRadius": "16px",
+        "padding": "20px",
+        "margin": "0 16px 16px"
+      },
+      "children": [
+        {
+          "id": "privacy_header",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "alignItems": "center",
+            "marginBottom": "20px"
+          },
+          "children": [
+            {
+              "id": "privacy_title",
+              "type": "Row",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "gap": "8px"
+              },
+              "children": [
+                {
+                  "id": "privacy_shield_icon",
+                  "type": "Icon",
+                  "style": {
+                    "width": "20px",
+                    "height": "20px",
+                    "color": "#FFFFFF"
+                  }
+                },
+                {
+                  "id": "privacy_text",
+                  "type": "Text",
+                  "text": "Privacy Stats",
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "500",
+                    "color": "#FFFFFF"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "privacy_toggle",
+              "type": "Icon",
+              "style": {
+                "width": "24px",
+                "height": "24px",
+                "color": "#666666"
+              }
+            }
+          ]
+        },
+        {
+          "id": "stats_row",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "alignItems": "center"
+          },
+          "children": [
+            {
+              "id": "trackers_stat",
+              "type": "Column",
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "id": "trackers_number",
+                  "type": "Text",
+                  "text": "285K",
+                  "style": {
+                    "fontSize": "28px",
+                    "fontWeight": "bold",
+                    "color": "#FF6B35"
+                  }
+                },
+                {
+                  "id": "trackers_label",
+                  "type": "Text",
+                  "text": "Trackers & Ads Blocked",
+                  "style": {
+                    "fontSize": "12px",
+                    "color": "#AAAAAA",
+                    "textAlign": "center"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "data_stat",
+              "type": "Column",
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "id": "data_number",
+                  "type": "Text",
+                  "text": "456MB",
+                  "style": {
+                    "fontSize": "28px",
+                    "fontWeight": "bold",
+                    "color": "#4A90E2"
+                  }
+                },
+                {
+                  "id": "data_label",
+                  "type": "Text",
+                  "text": "Est. Data Saved",
+                  "style": {
+                    "fontSize": "12px",
+                    "color": "#AAAAAA",
+                    "textAlign": "center"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "time_stat",
+              "type": "Column",
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "id": "time_number",
+                  "type": "Text",
+                  "text": "3h",
+                  "style": {
+                    "fontSize": "28px",
+                    "fontWeight": "bold",
+                    "color": "#FFFFFF"
+                  }
+                },
+                {
+                  "id": "time_label",
+                  "type": "Text",
+                  "text": "Est. Time Saved",
+                  "style": {
+                    "fontSize": "12px",
+                    "color": "#AAAAAA",
+                    "textAlign": "center"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quick_access_section",
+      "type": "Column",
+      "style": {
+        "margin": "0 16px 16px"
+      },
+      "children": [
+        {
+          "id": "quick_access_apps",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "gap": "16px",
+            "marginBottom": "8px"
+          },
+          "children": [
+            {
+              "id": "watch_wat_app",
+              "type": "Column",
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "alignItems": "center",
+                "gap": "8px"
+              },
+              "children": [
+                {
+                  "id": "watch_wat_icon",
+                  "type": "Icon",
+                  "style": {
+                    "width": "48px",
+                    "height": "48px",
+                    "backgroundColor": "#2A2A2A",
+                    "borderRadius": "50%",
+                    "color": "#4FC3F7"
+                  }
+                },
+                {
+                  "id": "watch_wat_text",
+                  "type": "Text",
+                  "text": "Watch Wat...",
+                  "style": {
+                    "fontSize": "12px",
+                    "color": "#FFFFFF"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "watch_the_app",
+              "type": "Column",
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "alignItems": "center",
+                "gap": "8px"
+              },
+              "children": [
+                {
+                  "id": "watch_the_icon",
+                  "type": "Icon",
+                  "style": {
+                    "width": "48px",
+                    "height": "48px",
+                    "backgroundColor": "#2A2A2A",
+                    "borderRadius": "50%",
+                    "color": "#4A90E2"
+                  }
+                },
+                {
+                  "id": "watch_the_text",
+                  "type": "Text",
+                  "text": "Watch The ...",
+                  "style": {
+                    "fontSize": "12px",
+                    "color": "#FFFFFF"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "watch_gam_app",
+              "type": "Column",
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "alignItems": "center",
+                "gap": "8px"
+              },
+              "children": [
+                {
+                  "id": "watch_gam_icon",
+                  "type": "Icon",
+                  "style": {
+                    "width": "48px",
+                    "height": "48px",
+                    "backgroundColor": "#2A2A2A",
+                    "borderRadius": "50%",
+                    "color": "#FFD700"
+                  }
+                },
+                {
+                  "id": "watch_gam_text",
+                  "type": "Text",
+                  "text": "Watch Gam...",
+                  "style": {
+                    "fontSize": "12px",
+                    "color": "#FFFFFF"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "watch_ran_app",
+              "type": "Column",
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "alignItems": "center",
+                "gap": "8px"
+              },
+              "children": [
+                {
+                  "id": "watch_ran_icon",
+                  "type": "Icon",
+                  "style": {
+                    "width": "48px",
+                    "height": "48px",
+                    "backgroundColor": "#2A2A2A",
+                    "borderRadius": "50%",
+                    "color": "#9C27B0"
+                  }
+                },
+                {
+                  "id": "watch_ran_text",
+                  "type": "Text",
+                  "text": "Watch Ran...",
+                  "style": {
+                    "fontSize": "12px",
+                    "color": "#FFFFFF"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "s_app",
+              "type": "Column",
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "alignItems": "center",
+                "gap": "8px"
+              },
+              "children": [
+                {
+                  "id": "s_icon",
+                  "type": "Icon",
+                  "style": {
+                    "width": "48px",
+                    "height": "48px",
+                    "backgroundColor": "#2A2A2A",
+                    "borderRadius": "50%",
+                    "color": "#FFFFFF"
+                  }
+                },
+                {
+                  "id": "s_text",
+                  "type": "Text",
+                  "text": "S",
+                  "style": {
+                    "fontSize": "12px",
+                    "color": "#FFFFFF"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "midnight_banner",
+      "type": "Banner",
+      "style": {
+        "backgroundColor": "#333333",
+        "borderRadius": "20px",
+        "margin": "0 16px",
+        "padding": "32px 24px",
+        "position": "relative",
+        "overflow": "hidden"
+      },
+      "children": [
+        {
+          "id": "banner_background",
+          "type": "Image",
+          "style": {
+            "position": "absolute",
+            "top": "0",
+            "left": "0",
+            "right": "0",
+            "bottom": "0",
+            "color": "#666666"
+          }
+        },
+        {
+          "id": "midnight_content",
+          "type": "Column",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "position": "relative",
+            "zIndex": "1"
+          },
+          "children": [
+            {
+              "id": "midnight_logo",
+              "type": "Row",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "gap": "8px",
+                "marginBottom": "16px"
+              },
+              "children": [
+                {
+                  "id": "logo_icon",
+                  "type": "Icon",
+                  "style": {
+                    "width": "24px",
+                    "height": "24px",
+                    "color": "#FFFFFF"
+                  }
+                },
+                {
+                  "id": "midnight_text",
+                  "type": "Text",
+                  "text": "midnight",
+                  "style": {
+                    "fontSize": "24px",
+                    "fontWeight": "500",
+                    "color": "#FFFFFF"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "description_text",
+              "type": "Text",
+              "text": "Token distribution that's designed to be fair, inclusive and equitable. #breakfree from status quo tokenomics.",
+              "style": {
+                "fontSize": "14px",
+                "color": "#CCCCCC",
+                "textAlign": "center",
+                "lineHeight": "1.4",
+                "marginBottom": "24px"
+              }
+            },
+            {
+              "id": "learn_more_button",
+              "type": "Button",
+              "text": "Learn more",
+              "style": {
+                "backgroundColor": "transparent",
+                "border": "1px solid #666666",
+                "borderRadius": "8px",
+                "padding": "12px 24px",
+                "color": "#FFFFFF",
+                "fontSize": "16px"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bottom_nav",
+      "type": "BottomNav",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+        "alignItems": "center",
+        "backgroundColor": "#1A1A1A",
+        "padding": "16px 0",
+        "marginTop": "auto"
+      },
+      "children": [
+        {
+          "id": "nav_home",
+          "type": "Icon",
+          "style": {
+            "width": "24px",
+            "height": "24px",
+            "color": "#FFFFFF"
+          }
+        },
+        {
+          "id": "nav_bookmark",
+          "type": "Icon",
+          "style": {
+            "width": "24px",
+            "height": "24px",
+            "color": "#FFFFFF"
+          }
+        },
+        {
+          "id": "nav_search",
+          "type": "Icon",
+          "style": {
+            "width": "24px",
+            "height": "24px",
+            "color": "#FFFFFF"
+          }
+        },
+        {
+          "id": "nav_tabs",
+          "type": "Icon",
+          "style": {
+            "width": "24px",
+            "height": "24px",
+            "color": "#FFFFFF",
+            "position": "relative"
+          }
+        },
+        {
+          "id": "nav_menu",
+          "type": "Icon",
+          "style": {
+            "width": "24px",
+            "height": "24px",
+            "color": "#FFFFFF"
+          }
+        }
+      ]
+    }
+  ]
+}

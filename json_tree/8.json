@@ -1,0 +1,391 @@
+{
+  "id": "google_settings",
+  "type": "Screen",
+  "style": {
+    "display": "flex",
+    "flexDirection": "column",
+    "backgroundColor": "#1A1A1A"
+  },
+  "children": [
+    {
+      "id": "header",
+      "type": "AppBar",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "backgroundColor": "#1A1A1A",
+        "padding": "16px"
+      },
+      "children": [
+        {
+          "id": "header_left",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": "16px"
+          },
+          "children": [
+            {
+              "id": "back_arrow",
+              "type": "Icon",
+              "style": {
+                "width": "24px",
+                "height": "24px",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "id": "settings_title",
+              "type": "Text",
+              "text": "Settings",
+              "style": {
+                "fontSize": "20px",
+                "color": "#FFFFFF"
+              }
+            }
+          ]
+        },
+        {
+          "id": "help_icon",
+          "type": "Icon",
+          "style": {
+            "width": "24px",
+            "height": "24px",
+            "color": "#FFFFFF"
+          }
+        }
+      ]
+    },
+    {
+      "id": "settings_content",
+      "type": "Column",
+      "style": {
+        "flex": "1",
+        "padding": "16px 0"
+      },
+      "children": [
+        {
+          "id": "you_and_google_section",
+          "type": "Column",
+          "style": {
+            "marginBottom": "32px"
+          },
+          "children": [
+            {
+              "id": "you_and_google_header",
+              "type": "SectionHeader",
+              "text": "You and Google",
+              "style": {
+                "fontSize": "16px",
+                "fontWeight": "500",
+                "color": "#4CAF50",
+                "marginBottom": "16px",
+                "paddingLeft": "16px"
+              }
+            },
+            {
+              "id": "user_profile",
+              "type": "Card",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "padding": "16px",
+                "gap": "16px"
+              },
+              "children": [
+                {
+                  "id": "profile_avatar",
+                  "type": "Avatar",
+                  "style": {
+                    "width": "48px",
+                    "height": "48px",
+                    "borderRadius": "50%",
+                    "backgroundColor": "#4CAF50",
+                    "color": "#FFFFFF"
+                  }
+                },
+                {
+                  "id": "user_info",
+                  "type": "Column",
+                  "style": {
+                    "flex": "1"
+                  },
+                  "children": [
+                    {
+                      "id": "username",
+                      "type": "Text",
+                      "text": "Suhas B",
+                      "style": {
+                        "fontSize": "18px",
+                        "fontWeight": "500",
+                        "color": "#FFFFFF",
+                        "marginBottom": "4px"
+                      }
+                    },
+                    {
+                      "id": "email",
+                      "type": "Text",
+                      "text": "s8hasgrylls@gmail.com",
+                      "style": {
+                        "fontSize": "14px",
+                        "color": "#AAAAAA"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "google_services",
+              "type": "Card",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "padding": "16px",
+                "gap": "16px"
+              },
+              "children": [
+                {
+                  "id": "google_icon",
+                  "type": "Icon",
+                  "style": {
+                    "width": "24px",
+                    "height": "24px",
+                    "color": "#FFFFFF"
+                  }
+                },
+                {
+                  "id": "google_services_text",
+                  "type": "Text",
+                  "text": "Google services",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#FFFFFF"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "basics_section",
+          "type": "Column",
+          "style": {
+            "marginBottom": "32px"
+          },
+          "children": [
+            {
+              "id": "basics_header",
+              "type": "SectionHeader",
+              "text": "Basics",
+              "style": {
+                "fontSize": "16px",
+                "fontWeight": "500",
+                "color": "#4CAF50",
+                "marginBottom": "16px",
+                "paddingLeft": "16px"
+              }
+            },
+            {
+              "id": "search_engine_item",
+              "type": "Card",
+              "style": {
+                "backgroundColor": "transparent",
+                "padding": "16px"
+              },
+              "children": [
+                {
+                  "id": "search_engine_title",
+                  "type": "Text",
+                  "text": "Search engine",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#FFFFFF",
+                    "marginBottom": "4px"
+                  }
+                },
+                {
+                  "id": "search_engine_value",
+                  "type": "Text",
+                  "text": "Google",
+                  "style": {
+                    "fontSize": "14px",
+                    "color": "#AAAAAA"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "address_bar_item",
+              "type": "Card",
+              "style": {
+                "backgroundColor": "transparent",
+                "padding": "16px",
+                "position": "relative"
+              },
+              "children": [
+                {
+                  "id": "address_bar_title",
+                  "type": "Text",
+                  "text": "Address bar",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#FFFFFF",
+                    "marginBottom": "4px"
+                  }
+                },
+                {
+                  "id": "address_bar_value",
+                  "type": "Text",
+                  "text": "Top",
+                  "style": {
+                    "fontSize": "14px",
+                    "color": "#AAAAAA"
+                  }
+                },
+                {
+                  "id": "new_badge",
+                  "type": "Badge",
+                  "text": "New",
+                  "style": {
+                    "position": "absolute",
+                    "top": "16px",
+                    "right": "16px",
+                    "backgroundColor": "transparent",
+                    "color": "#4CAF50",
+                    "fontSize": "12px",
+                    "fontWeight": "500"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "privacy_security_item",
+              "type": "Card",
+              "style": {
+                "backgroundColor": "transparent",
+                "padding": "16px"
+              },
+              "children": [
+                {
+                  "id": "privacy_security_text",
+                  "type": "Text",
+                  "text": "Privacy and security",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#FFFFFF"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "safety_check_item",
+              "type": "Card",
+              "style": {
+                "backgroundColor": "transparent",
+                "padding": "16px"
+              },
+              "children": [
+                {
+                  "id": "safety_check_text",
+                  "type": "Text",
+                  "text": "Safety check",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#FFFFFF"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "passwords_section",
+          "type": "Column",
+          "style": {
+            "marginBottom": "32px"
+          },
+          "children": [
+            {
+              "id": "passwords_header",
+              "type": "SectionHeader",
+              "text": "Passwords and autofill",
+              "style": {
+                "fontSize": "16px",
+                "fontWeight": "500",
+                "color": "#4CAF50",
+                "marginBottom": "16px",
+                "paddingLeft": "16px"
+              }
+            },
+            {
+              "id": "password_manager_item",
+              "type": "Card",
+              "style": {
+                "backgroundColor": "transparent",
+                "padding": "16px"
+              },
+              "children": [
+                {
+                  "id": "password_manager_text",
+                  "type": "Text",
+                  "text": "Google Password Manager",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#FFFFFF"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "payment_methods_item",
+              "type": "Card",
+              "style": {
+                "backgroundColor": "transparent",
+                "padding": "16px"
+              },
+              "children": [
+                {
+                  "id": "payment_methods_text",
+                  "type": "Text",
+                  "text": "Payment methods",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#FFFFFF"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "addresses_item",
+              "type": "Card",
+              "style": {
+                "backgroundColor": "transparent",
+                "padding": "16px"
+              },
+              "children": [
+                {
+                  "id": "addresses_text",
+                  "type": "Text",
+                  "text": "Addresses and more",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#FFFFFF"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,480 @@
+{
+  "id": "instagram_notifications",
+  "type": "Screen",
+  "style": {
+    "display": "flex",
+    "flexDirection": "column",
+    "backgroundColor": "#000000",
+    "color": "#FFFFFF"
+  },
+  "children": [
+    {
+      "id": "header",
+      "type": "AppBar",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "padding": "16px",
+        "backgroundColor": "#000000",
+        "gap": "16px"
+      },
+      "children": [
+        {
+          "id": "back_arrow",
+          "type": "Icon",
+          "style": {
+            "color": "#FFFFFF",
+            "fontSize": "24px"
+          }
+        },
+        {
+          "id": "page_title",
+          "type": "Text",
+          "text": "Notifications",
+          "style": {
+            "fontSize": "22px",
+            "fontWeight": "600",
+            "color": "#FFFFFF"
+          }
+        }
+      ]
+    },
+    {
+      "id": "push_notifications_section",
+      "type": "Column",
+      "style": {
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": "24px 16px 16px 16px",
+        "gap": "24px"
+      },
+      "children": [
+        {
+          "id": "push_notifications_title",
+          "type": "Text",
+          "text": "Push notifications",
+          "style": {
+            "fontSize": "18px",
+            "fontWeight": "600",
+            "color": "#FFFFFF"
+          }
+        },
+        {
+          "id": "pause_all_option",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "justifyContent": "space-between"
+          },
+          "children": [
+            {
+              "id": "pause_all_content",
+              "type": "Column",
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "gap": "8px",
+                "flex": 1
+              },
+              "children": [
+                {
+                  "id": "pause_all_title",
+                  "type": "Text",
+                  "text": "Pause all",
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "500",
+                    "color": "#FFFFFF"
+                  }
+                },
+                {
+                  "id": "pause_all_description",
+                  "type": "Text",
+                  "text": "Temporarily pause notifications",
+                  "style": {
+                    "fontSize": "14px",
+                    "color": "#8E8E8E"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "pause_all_toggle",
+              "type": "Button",
+              "style": {
+                "backgroundColor": "#8E8E8E",
+                "borderRadius": "20px",
+                "width": "50px",
+                "height": "30px",
+                "position": "relative",
+                "border": "none"
+              },
+              "children": [
+                {
+                  "id": "toggle_handle",
+                  "type": "Badge",
+                  "style": {
+                    "width": "26px",
+                    "height": "26px",
+                    "borderRadius": "50%",
+                    "backgroundColor": "#333333",
+                    "position": "absolute",
+                    "left": "2px",
+                    "top": "2px"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sleep_mode_option",
+          "type": "Column",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "8px"
+          },
+          "children": [
+            {
+              "id": "sleep_mode_title",
+              "type": "Text",
+              "text": "Sleep mode",
+              "style": {
+                "fontSize": "16px",
+                "fontWeight": "500",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "id": "sleep_mode_description",
+              "type": "Text",
+              "text": "Automatically mute notifications at night or whenever you need to focus.",
+              "style": {
+                "fontSize": "14px",
+                "color": "#8E8E8E",
+                "lineHeight": "1.4"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "notification_categories",
+      "type": "Column",
+      "style": {
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": "16px",
+        "gap": "24px"
+      },
+      "children": [
+        {
+          "id": "posts_stories_comments",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "justifyContent": "space-between"
+          },
+          "children": [
+            {
+              "id": "posts_stories_text",
+              "type": "Text",
+              "text": "Posts, stories and comments",
+              "style": {
+                "fontSize": "16px",
+                "fontWeight": "500",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "id": "posts_stories_arrow",
+              "type": "Icon",
+              "style": {
+                "color": "#8E8E8E",
+                "fontSize": "20px"
+              }
+            }
+          ]
+        },
+        {
+          "id": "following_followers",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "justifyContent": "space-between"
+          },
+          "children": [
+            {
+              "id": "following_followers_text",
+              "type": "Text",
+              "text": "Following and followers",
+              "style": {
+                "fontSize": "16px",
+                "fontWeight": "500",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "id": "following_followers_arrow",
+              "type": "Icon",
+              "style": {
+                "color": "#8E8E8E",
+                "fontSize": "20px"
+              }
+            }
+          ]
+        },
+        {
+          "id": "messages_option",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "justifyContent": "space-between"
+          },
+          "children": [
+            {
+              "id": "messages_text",
+              "type": "Text",
+              "text": "Messages",
+              "style": {
+                "fontSize": "16px",
+                "fontWeight": "500",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "id": "messages_arrow",
+              "type": "Icon",
+              "style": {
+                "color": "#8E8E8E",
+                "fontSize": "20px"
+              }
+            }
+          ]
+        },
+        {
+          "id": "calls_option",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "justifyContent": "space-between"
+          },
+          "children": [
+            {
+              "id": "calls_text",
+              "type": "Text",
+              "text": "Calls",
+              "style": {
+                "fontSize": "16px",
+                "fontWeight": "500",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "id": "calls_arrow",
+              "type": "Icon",
+              "style": {
+                "color": "#8E8E8E",
+                "fontSize": "20px"
+              }
+            }
+          ]
+        },
+        {
+          "id": "live_reels_option",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "justifyContent": "space-between"
+          },
+          "children": [
+            {
+              "id": "live_reels_text",
+              "type": "Text",
+              "text": "Live and reels",
+              "style": {
+                "fontSize": "16px",
+                "fontWeight": "500",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "id": "live_reels_arrow",
+              "type": "Icon",
+              "style": {
+                "color": "#8E8E8E",
+                "fontSize": "20px"
+              }
+            }
+          ]
+        },
+        {
+          "id": "fundraisers_option",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "justifyContent": "space-between"
+          },
+          "children": [
+            {
+              "id": "fundraisers_text",
+              "type": "Text",
+              "text": "Fundraisers",
+              "style": {
+                "fontSize": "16px",
+                "fontWeight": "500",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "id": "fundraisers_arrow",
+              "type": "Icon",
+              "style": {
+                "color": "#8E8E8E",
+                "fontSize": "20px"
+              }
+            }
+          ]
+        },
+        {
+          "id": "from_instagram_option",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "justifyContent": "space-between"
+          },
+          "children": [
+            {
+              "id": "from_instagram_text",
+              "type": "Text",
+              "text": "From Instagram",
+              "style": {
+                "fontSize": "16px",
+                "fontWeight": "500",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "id": "from_instagram_arrow",
+              "type": "Icon",
+              "style": {
+                "color": "#8E8E8E",
+                "fontSize": "20px"
+              }
+            }
+          ]
+        },
+        {
+          "id": "birthdays_option",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "justifyContent": "space-between"
+          },
+          "children": [
+            {
+              "id": "birthdays_text",
+              "type": "Text",
+              "text": "Birthdays",
+              "style": {
+                "fontSize": "16px",
+                "fontWeight": "500",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "id": "birthdays_arrow",
+              "type": "Icon",
+              "style": {
+                "color": "#8E8E8E",
+                "fontSize": "20px"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bottom_navigation",
+      "type": "BottomNav",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+        "alignItems": "center",
+        "padding": "12px 0",
+        "backgroundColor": "#000000",
+        "borderTop": "1px solid #262626",
+        "position": "fixed",
+        "bottom": "0",
+        "width": "100%"
+      },
+      "children": [
+        {
+          "id": "nav_home",
+          "type": "Icon",
+          "style": {
+            "color": "#FFFFFF",
+            "fontSize": "28px"
+          }
+        },
+        {
+          "id": "nav_search",
+          "type": "Icon",
+          "style": {
+            "color": "#8E8E8E",
+            "fontSize": "28px"
+          }
+        },
+        {
+          "id": "nav_create",
+          "type": "Icon",
+          "style": {
+            "color": "#8E8E8E",
+            "fontSize": "28px"
+          }
+        },
+        {
+          "id": "nav_reels",
+          "type": "Icon",
+          "style": {
+            "color": "#8E8E8E",
+            "fontSize": "28px"
+          }
+        },
+        {
+          "id": "nav_profile",
+          "type": "Avatar",
+          "style": {
+            "width": "28px",
+            "height": "28px",
+            "borderRadius": "50%",
+            "backgroundColor": "#8E8E8E",
+            "border": "1px solid #8E8E8E"
+          }
+        }
+      ]
+    }
+  ]
+}

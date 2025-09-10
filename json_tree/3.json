@@ -1,0 +1,148 @@
+{
+  "id": "deepseek_login",
+  "type": "Screen",
+  "style": {
+    "display": "flex",
+    "flexDirection": "column",
+    "backgroundColor": "#1A1A1A",
+    "padding": "24px"
+  },
+  "children": [
+    {
+      "id": "header",
+      "type": "AppBar",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "marginBottom": "48px"
+      },
+      "children": [
+        {
+          "id": "back_button",
+          "type": "Icon",
+          "style": {
+            "width": "24px",
+            "height": "24px",
+            "color": "#FFFFFF"
+          }
+        },
+        {
+          "id": "contact_us_link",
+          "type": "Text",
+          "text": "Contact us",
+          "style": {
+            "fontSize": "16px",
+            "color": "#CCCCCC"
+          }
+        }
+      ]
+    },
+    {
+      "id": "login_form",
+      "type": "Column",
+      "style": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "24px"
+      },
+      "children": [
+        {
+          "id": "page_title",
+          "type": "Text",
+          "text": "Log in with password",
+          "style": {
+            "fontSize": "28px",
+            "fontWeight": "normal",
+            "color": "#FFFFFF",
+            "textAlign": "center",
+            "marginBottom": "32px"
+          }
+        },
+        {
+          "id": "email_input",
+          "type": "SearchBar",
+          "style": {
+            "backgroundColor": "#2A2A2A",
+            "borderRadius": "12px",
+            "border": "none",
+            "padding": "20px"
+          },
+          "children": [
+            {
+              "id": "email_placeholder",
+              "type": "Text",
+              "text": "Email / +86 Phone number",
+              "style": {
+                "fontSize": "16px",
+                "color": "#888888"
+              }
+            }
+          ]
+        },
+        {
+          "id": "password_input",
+          "type": "SearchBar",
+          "style": {
+            "backgroundColor": "#2A2A2A",
+            "borderRadius": "12px",
+            "border": "none",
+            "padding": "20px",
+            "position": "relative"
+          },
+          "children": [
+            {
+              "id": "password_placeholder",
+              "type": "Text",
+              "text": "Password",
+              "style": {
+                "fontSize": "16px",
+                "color": "#888888"
+              }
+            },
+            {
+              "id": "show_password_icon",
+              "type": "Icon",
+              "style": {
+                "position": "absolute",
+                "right": "20px",
+                "top": "50%",
+                "transform": "translateY(-50%)",
+                "width": "20px",
+                "height": "20px",
+                "color": "#888888"
+              }
+            }
+          ]
+        },
+        {
+          "id": "forgot_password_link",
+          "type": "Text",
+          "text": "Forgot password?",
+          "style": {
+            "fontSize": "16px",
+            "color": "#4A90E2",
+            "textAlign": "left"
+          }
+        },
+        {
+          "id": "login_button",
+          "type": "Button",
+          "text": "Log in",
+          "style": {
+            "backgroundColor": "#4A90E2",
+            "borderRadius": "12px",
+            "padding": "18px",
+            "border": "none",
+            "fontSize": "18px",
+            "fontWeight": "500",
+            "color": "#FFFFFF",
+            "textAlign": "center",
+            "marginTop": "24px"
+          }
+        }
+      ]
+    }
+  ]
+}

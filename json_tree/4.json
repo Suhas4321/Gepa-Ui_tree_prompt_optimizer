@@ -1,0 +1,674 @@
+{
+  "id": "youtube_shorts",
+  "type": "Screen",
+  "style": {
+    "display": "flex",
+    "flexDirection": "column",
+    "backgroundColor": "#0F0F0F"
+  },
+  "children": [
+    {
+      "id": "header",
+      "type": "AppBar",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "backgroundColor": "#0F0F0F",
+        "padding": "16px"
+      },
+      "children": [
+        {
+          "id": "youtube_logo",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": "8px"
+          },
+          "children": [
+            {
+              "id": "youtube_icon",
+              "type": "Icon",
+              "style": {
+                "width": "32px",
+                "height": "24px",
+                "color": "#FF0000"
+              }
+            },
+            {
+              "id": "youtube_text",
+              "type": "Text",
+              "text": "YouTube",
+              "style": {
+                "fontSize": "20px",
+                "fontWeight": "bold",
+                "color": "#FFFFFF"
+              }
+            }
+          ]
+        },
+        {
+          "id": "header_actions",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": "16px"
+          },
+          "children": [
+            {
+              "id": "cast_icon",
+              "type": "Icon",
+              "style": {
+                "width": "24px",
+                "height": "24px",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "id": "notification_container",
+              "type": "Row",
+              "style": {
+                "position": "relative"
+              },
+              "children": [
+                {
+                  "id": "notification_icon",
+                  "type": "Icon",
+                  "style": {
+                    "width": "24px",
+                    "height": "24px",
+                    "color": "#FFFFFF"
+                  }
+                },
+                {
+                  "id": "notification_badge",
+                  "type": "Badge",
+                  "text": "7",
+                  "style": {
+                    "position": "absolute",
+                    "top": "-8px",
+                    "right": "-8px",
+                    "backgroundColor": "#FF0000",
+                    "color": "#FFFFFF",
+                    "borderRadius": "50%",
+                    "width": "20px",
+                    "height": "20px",
+                    "fontSize": "12px",
+                    "textAlign": "center"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "search_icon",
+              "type": "Icon",
+              "style": {
+                "width": "24px",
+                "height": "24px",
+                "color": "#FFFFFF"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "filter_tabs",
+      "type": "Row",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "gap": "12px",
+        "padding": "0 16px 16px",
+        "overflowX": "scroll"
+      },
+      "children": [
+        {
+          "id": "compass_tab",
+          "type": "Chip",
+          "style": {
+            "backgroundColor": "#272727",
+            "borderRadius": "50%",
+            "padding": "12px",
+            "color": "#FFFFFF"
+          }
+        },
+        {
+          "id": "all_tab",
+          "type": "Chip",
+          "text": "All",
+          "style": {
+            "backgroundColor": "#FFFFFF",
+            "color": "#000000",
+            "borderRadius": "20px",
+            "padding": "8px 16px",
+            "fontSize": "14px"
+          }
+        },
+        {
+          "id": "hyped_tab",
+          "type": "Chip",
+          "text": "Hyped",
+          "style": {
+            "backgroundColor": "#272727",
+            "color": "#FFFFFF",
+            "borderRadius": "20px",
+            "padding": "8px 16px",
+            "fontSize": "14px"
+          }
+        },
+        {
+          "id": "gaming_tab",
+          "type": "Chip",
+          "text": "Gaming",
+          "style": {
+            "backgroundColor": "#272727",
+            "color": "#FFFFFF",
+            "borderRadius": "20px",
+            "padding": "8px 16px",
+            "fontSize": "14px"
+          }
+        },
+        {
+          "id": "music_tab",
+          "type": "Chip",
+          "text": "Music",
+          "style": {
+            "backgroundColor": "#272727",
+            "color": "#FFFFFF",
+            "borderRadius": "20px",
+            "padding": "8px 16px",
+            "fontSize": "14px"
+          }
+        }
+      ]
+    },
+    {
+      "id": "shorts_section",
+      "type": "Column",
+      "style": {
+        "flex": "1"
+      },
+      "children": [
+        {
+          "id": "shorts_header",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "alignItems": "center",
+            "padding": "0 16px 16px"
+          },
+          "children": [
+            {
+              "id": "shorts_title",
+              "type": "Row",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "gap": "8px"
+              },
+              "children": [
+                {
+                  "id": "shorts_icon",
+                  "type": "Icon",
+                  "style": {
+                    "width": "24px",
+                    "height": "24px",
+                    "color": "#FF0000"
+                  }
+                },
+                {
+                  "id": "shorts_text",
+                  "type": "Text",
+                  "text": "Shorts",
+                  "style": {
+                    "fontSize": "20px",
+                    "fontWeight": "bold",
+                    "color": "#FFFFFF"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "more_options",
+              "type": "Icon",
+              "style": {
+                "width": "24px",
+                "height": "24px",
+                "color": "#FFFFFF"
+              }
+            }
+          ]
+        },
+        {
+          "id": "shorts_grid",
+          "type": "Grid",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "16px",
+            "padding": "0 16px"
+          },
+          "children": [
+            {
+              "id": "top_row",
+              "type": "Row",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "gap": "8px"
+              },
+              "children": [
+                {
+                  "id": "dreams_short",
+                  "type": "Card",
+                  "style": {
+                    "flex": "1",
+                    "borderRadius": "12px",
+                    "overflow": "hidden",
+                    "position": "relative",
+                    "backgroundColor": "#1A1A1A"
+                  },
+                  "children": [
+                    {
+                      "id": "dreams_thumbnail",
+                      "type": "Image",
+                      "style": {
+                        "width": "100%",
+                        "height": "200px",
+                        "objectFit": "cover",
+                        "color": "#8B4513"
+                      }
+                    },
+                    {
+                      "id": "dreams_title",
+                      "type": "Text",
+                      "text": "The Day Her Dreams Broke 💔 #shorts #lb...",
+                      "style": {
+                        "position": "absolute",
+                        "bottom": "8px",
+                        "left": "8px",
+                        "right": "8px",
+                        "color": "#FFFFFF",
+                        "fontSize": "14px",
+                        "fontWeight": "500"
+                      }
+                    },
+                    {
+                      "id": "dreams_header_text",
+                      "type": "Text",
+                      "text": "Sometimes love chooses you and...",
+                      "style": {
+                        "position": "absolute",
+                        "top": "8px",
+                        "left": "8px",
+                        "right": "8px",
+                        "color": "#FFFFFF",
+                        "fontSize": "12px"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "indian_balls_short",
+                  "type": "Card",
+                  "style": {
+                    "flex": "1",
+                    "borderRadius": "12px",
+                    "overflow": "hidden",
+                    "position": "relative",
+                    "backgroundColor": "#1A1A1A"
+                  },
+                  "children": [
+                    {
+                      "id": "indian_balls_thumbnail",
+                      "type": "Image",
+                      "style": {
+                        "width": "100%",
+                        "height": "200px",
+                        "objectFit": "cover",
+                        "color": "#D2691E"
+                      }
+                    },
+                    {
+                      "id": "indian_balls_title",
+                      "type": "Text",
+                      "text": "🇯🇵Japanese balls vs 🇮🇳Indian balls",
+                      "style": {
+                        "position": "absolute",
+                        "bottom": "8px",
+                        "left": "8px",
+                        "right": "8px",
+                        "color": "#FFFFFF",
+                        "fontSize": "14px",
+                        "fontWeight": "500"
+                      }
+                    },
+                    {
+                      "id": "indian_ball_label",
+                      "type": "Chip",
+                      "text": "Indian Ball",
+                      "style": {
+                        "position": "absolute",
+                        "top": "50%",
+                        "left": "50%",
+                        "transform": "translate(-50%, -50%)",
+                        "backgroundColor": "#FFEB3B",
+                        "color": "#000000",
+                        "fontSize": "12px",
+                        "padding": "4px 8px",
+                        "borderRadius": "4px"
+                      }
+                    },
+                    {
+                      "id": "more_options_video",
+                      "type": "Icon",
+                      "style": {
+                        "position": "absolute",
+                        "top": "8px",
+                        "right": "8px",
+                        "color": "#FFFFFF"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "bottom_row",
+              "type": "Row",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "gap": "8px"
+              },
+              "children": [
+                {
+                  "id": "scared_bro_short",
+                  "type": "Card",
+                  "style": {
+                    "flex": "1",
+                    "borderRadius": "12px",
+                    "overflow": "hidden",
+                    "position": "relative",
+                    "backgroundColor": "#1A1A1A"
+                  },
+                  "children": [
+                    {
+                      "id": "scared_thumbnail",
+                      "type": "Image",
+                      "style": {
+                        "width": "100%",
+                        "height": "200px",
+                        "objectFit": "cover",
+                        "color": "#4A4A4A"
+                      }
+                    },
+                    {
+                      "id": "scared_title",
+                      "type": "Text",
+                      "text": "Bro is scared",
+                      "style": {
+                        "position": "absolute",
+                        "bottom": "8px",
+                        "left": "8px",
+                        "right": "8px",
+                        "color": "#FFFFFF",
+                        "fontSize": "14px",
+                        "fontWeight": "500"
+                      }
+                    },
+                    {
+                      "id": "scared_header_text",
+                      "type": "Text",
+                      "text": "He's running for his life 😭",
+                      "style": {
+                        "position": "absolute",
+                        "top": "8px",
+                        "left": "8px",
+                        "right": "8px",
+                        "color": "#FFFFFF",
+                        "fontSize": "12px"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "gravity_training_short",
+                  "type": "Card",
+                  "style": {
+                    "flex": "1",
+                    "borderRadius": "12px",
+                    "overflow": "hidden",
+                    "position": "relative",
+                    "backgroundColor": "#1A1A1A"
+                  },
+                  "children": [
+                    {
+                      "id": "gravity_thumbnail",
+                      "type": "Image",
+                      "style": {
+                        "width": "100%",
+                        "height": "200px",
+                        "objectFit": "cover",
+                        "color": "#D2B48C"
+                      }
+                    },
+                    {
+                      "id": "gravity_title",
+                      "type": "Text",
+                      "text": "He Is Training To DEFEAT GRAVITY! 😳",
+                      "style": {
+                        "position": "absolute",
+                        "bottom": "8px",
+                        "left": "8px",
+                        "right": "8px",
+                        "color": "#FFFFFF",
+                        "fontSize": "14px",
+                        "fontWeight": "500"
+                      }
+                    },
+                    {
+                      "id": "weight_label",
+                      "type": "Text",
+                      "text": "24kg",
+                      "style": {
+                        "position": "absolute",
+                        "top": "8px",
+                        "left": "8px",
+                        "color": "#FFFFFF",
+                        "fontSize": "16px",
+                        "fontWeight": "bold"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bottom_nav",
+      "type": "BottomNav",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+        "alignItems": "center",
+        "backgroundColor": "#0F0F0F",
+        "padding": "12px 0",
+        "borderTop": "1px solid #272727"
+      },
+      "children": [
+        {
+          "id": "nav_home",
+          "type": "Tab",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "gap": "4px"
+          },
+          "children": [
+            {
+              "id": "home_icon",
+              "type": "Icon",
+              "style": {
+                "width": "24px",
+                "height": "24px",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "id": "home_text",
+              "type": "Text",
+              "text": "Home",
+              "style": {
+                "fontSize": "10px",
+                "color": "#FFFFFF"
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_shorts",
+          "type": "Tab",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "gap": "4px"
+          },
+          "children": [
+            {
+              "id": "shorts_nav_icon",
+              "type": "Icon",
+              "style": {
+                "width": "24px",
+                "height": "24px",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "id": "shorts_nav_text",
+              "type": "Text",
+              "text": "Shorts",
+              "style": {
+                "fontSize": "10px",
+                "color": "#FFFFFF"
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_create",
+          "type": "Tab",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "gap": "4px"
+          },
+          "children": [
+            {
+              "id": "create_icon",
+              "type": "Icon",
+              "style": {
+                "width": "24px",
+                "height": "24px",
+                "color": "#FFFFFF"
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_subscriptions",
+          "type": "Tab",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "gap": "4px",
+            "position": "relative"
+          },
+          "children": [
+            {
+              "id": "subscriptions_icon",
+              "type": "Icon",
+              "style": {
+                "width": "24px",
+                "height": "24px",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "id": "subscriptions_text",
+              "type": "Text",
+              "text": "Subscriptions",
+              "style": {
+                "fontSize": "10px",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "id": "subscriptions_badge",
+              "type": "Badge",
+              "style": {
+                "position": "absolute",
+                "top": "-4px",
+                "right": "8px",
+                "width": "8px",
+                "height": "8px",
+                "backgroundColor": "#FF0000",
+                "borderRadius": "50%",
+                "color": "#FF0000"
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_you",
+          "type": "Tab",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "gap": "4px"
+          },
+          "children": [
+            {
+              "id": "you_avatar",
+              "type": "Avatar",
+              "style": {
+                "width": "24px",
+                "height": "24px",
+                "borderRadius": "12px",
+                "backgroundColor": "#4A90E2",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "id": "you_text",
+              "type": "Text",
+              "text": "You",
+              "style": {
+                "fontSize": "10px",
+                "color": "#FFFFFF"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

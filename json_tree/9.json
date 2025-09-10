@@ -1,0 +1,478 @@
+{
+  "id": "ksrtc_registration",
+  "type": "Screen",
+  "style": {
+    "display": "flex",
+    "flexDirection": "column",
+    "backgroundColor": "#F5F5F5"
+  },
+  "children": [
+    {
+      "id": "header",
+      "type": "AppBar",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "backgroundColor": "#1E3A8A",
+        "padding": "16px",
+        "gap": "16px"
+      },
+      "children": [
+        {
+          "id": "back_arrow",
+          "type": "Icon",
+          "style": {
+            "width": "24px",
+            "height": "24px",
+            "color": "#FFFFFF"
+          }
+        },
+        {
+          "id": "header_title",
+          "type": "Text",
+          "text": "Signup/Registration",
+          "style": {
+            "fontSize": "20px",
+            "fontWeight": "500",
+            "color": "#FFFFFF"
+          }
+        }
+      ]
+    },
+    {
+      "id": "form_container",
+      "type": "Column",
+      "style": {
+        "flex": "1",
+        "padding": "24px"
+      },
+      "children": [
+        {
+          "id": "auth_toggle",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": "24px",
+            "marginBottom": "32px"
+          },
+          "children": [
+            {
+              "id": "login_option",
+              "type": "Row",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "gap": "8px"
+              },
+              "children": [
+                {
+                  "id": "login_radio",
+                  "type": "Icon",
+                  "style": {
+                    "width": "20px",
+                    "height": "20px",
+                    "borderRadius": "50%",
+                    "border": "2px solid #1E3A8A",
+                    "backgroundColor": "#FFFFFF",
+                    "color": "#1E3A8A"
+                  }
+                },
+                {
+                  "id": "login_text",
+                  "type": "Text",
+                  "text": "Login",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#333333"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "signup_option",
+              "type": "Row",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "gap": "8px"
+              },
+              "children": [
+                {
+                  "id": "signup_radio",
+                  "type": "Icon",
+                  "style": {
+                    "width": "20px",
+                    "height": "20px",
+                    "borderRadius": "50%",
+                    "backgroundColor": "#1E3A8A",
+                    "color": "#FFFFFF"
+                  }
+                },
+                {
+                  "id": "signup_text",
+                  "type": "Text",
+                  "text": "Signup/Registration",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#333333"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "form_fields",
+          "type": "Column",
+          "style": {
+            "gap": "16px",
+            "marginBottom": "32px"
+          },
+          "children": [
+            {
+              "id": "email_field",
+              "type": "SearchBar",
+              "style": {
+                "backgroundColor": "#FFFFFF",
+                "borderRadius": "12px",
+                "border": "1px solid #CCCCCC",
+                "padding": "16px",
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "gap": "12px"
+              },
+              "children": [
+                {
+                  "id": "email_icon",
+                  "type": "Icon",
+                  "style": {
+                    "width": "20px",
+                    "height": "20px",
+                    "color": "#888888"
+                  }
+                },
+                {
+                  "id": "email_placeholder",
+                  "type": "Text",
+                  "text": "Email Id",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#888888"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "fullname_field",
+              "type": "SearchBar",
+              "style": {
+                "backgroundColor": "#FFFFFF",
+                "borderRadius": "12px",
+                "border": "1px solid #CCCCCC",
+                "padding": "16px",
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "gap": "12px"
+              },
+              "children": [
+                {
+                  "id": "fullname_icon",
+                  "type": "Icon",
+                  "style": {
+                    "width": "20px",
+                    "height": "20px",
+                    "color": "#888888"
+                  }
+                },
+                {
+                  "id": "fullname_placeholder",
+                  "type": "Text",
+                  "text": "Full Name",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#888888"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "country_field",
+              "type": "SearchBar",
+              "style": {
+                "backgroundColor": "#FFFFFF",
+                "borderRadius": "12px",
+                "border": "1px solid #CCCCCC",
+                "padding": "16px",
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "justifyContent": "space-between"
+              },
+              "children": [
+                {
+                  "id": "country_left",
+                  "type": "Row",
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "alignItems": "center",
+                    "gap": "12px"
+                  },
+                  "children": [
+                    {
+                      "id": "flag_icon",
+                      "type": "Icon",
+                      "style": {
+                        "width": "20px",
+                        "height": "20px",
+                        "color": "#888888"
+                      }
+                    },
+                    {
+                      "id": "country_info",
+                      "type": "Column",
+                      "style": {
+                        "gap": "2px"
+                      },
+                      "children": [
+                        {
+                          "id": "country_code_label",
+                          "type": "Text",
+                          "text": "Country Code",
+                          "style": {
+                            "fontSize": "12px",
+                            "color": "#888888"
+                          }
+                        },
+                        {
+                          "id": "country_value",
+                          "type": "Text",
+                          "text": "India +91",
+                          "style": {
+                            "fontSize": "16px",
+                            "color": "#333333"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "dropdown_arrow",
+                  "type": "Icon",
+                  "style": {
+                    "width": "20px",
+                    "height": "20px",
+                    "color": "#888888"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "mobile_field",
+              "type": "SearchBar",
+              "style": {
+                "backgroundColor": "#FFFFFF",
+                "borderRadius": "12px",
+                "border": "1px solid #CCCCCC",
+                "padding": "16px",
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "gap": "12px"
+              },
+              "children": [
+                {
+                  "id": "mobile_icon",
+                  "type": "Icon",
+                  "style": {
+                    "width": "20px",
+                    "height": "20px",
+                    "color": "#888888"
+                  }
+                },
+                {
+                  "id": "mobile_placeholder",
+                  "type": "Text",
+                  "text": "Mobile Number",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#888888"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "password_field",
+              "type": "SearchBar",
+              "style": {
+                "backgroundColor": "#FFFFFF",
+                "borderRadius": "12px",
+                "border": "1px solid #CCCCCC",
+                "padding": "16px",
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "justifyContent": "space-between"
+              },
+              "children": [
+                {
+                  "id": "password_left",
+                  "type": "Row",
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "alignItems": "center",
+                    "gap": "12px"
+                  },
+                  "children": [
+                    {
+                      "id": "password_icon",
+                      "type": "Icon",
+                      "style": {
+                        "width": "20px",
+                        "height": "20px",
+                        "color": "#888888"
+                      }
+                    },
+                    {
+                      "id": "password_placeholder",
+                      "type": "Text",
+                      "text": "Password",
+                      "style": {
+                        "fontSize": "16px",
+                        "color": "#888888"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "password_visibility",
+                  "type": "Icon",
+                  "style": {
+                    "width": "20px",
+                    "height": "20px",
+                    "color": "#888888"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "confirm_password_field",
+              "type": "SearchBar",
+              "style": {
+                "backgroundColor": "#FFFFFF",
+                "borderRadius": "12px",
+                "border": "1px solid #CCCCCC",
+                "padding": "16px",
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "justifyContent": "space-between"
+              },
+              "children": [
+                {
+                  "id": "confirm_password_left",
+                  "type": "Row",
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "alignItems": "center",
+                    "gap": "12px"
+                  },
+                  "children": [
+                    {
+                      "id": "confirm_password_icon",
+                      "type": "Icon",
+                      "style": {
+                        "width": "20px",
+                        "height": "20px",
+                        "color": "#888888"
+                      }
+                    },
+                    {
+                      "id": "confirm_password_placeholder",
+                      "type": "Text",
+                      "text": "Reconfirm Password",
+                      "style": {
+                        "fontSize": "16px",
+                        "color": "#888888"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "confirm_password_visibility",
+                  "type": "Icon",
+                  "style": {
+                    "width": "20px",
+                    "height": "20px",
+                    "color": "#888888"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "terms_section",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "gap": "12px",
+            "marginBottom": "32px"
+          },
+          "children": [
+            {
+              "id": "terms_checkbox",
+              "type": "Icon",
+              "style": {
+                "width": "20px",
+                "height": "20px",
+                "border": "2px solid #1E3A8A",
+                "borderRadius": "4px",
+                "backgroundColor": "#FFFFFF",
+                "color": "#1E3A8A"
+              }
+            },
+            {
+              "id": "terms_text",
+              "type": "Text",
+              "text": "I agree to KSRTC Terms & Conditions",
+              "style": {
+                "fontSize": "14px",
+                "color": "#333333",
+                "flex": "1"
+              }
+            }
+          ]
+        },
+        {
+          "id": "validate_button",
+          "type": "Button",
+          "text": "VALIDATE EMAIL/MOBILE",
+          "style": {
+            "backgroundColor": "#FF6600",
+            "color": "#FFFFFF",
+            "borderRadius": "8px",
+            "padding": "16px",
+            "fontSize": "16px",
+            "fontWeight": "bold",
+            "textAlign": "center",
+            "border": "none",
+            "width": "100%"
+          }
+        }
+      ]
+    }
+  ]
+}

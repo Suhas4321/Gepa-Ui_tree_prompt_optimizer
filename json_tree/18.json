@@ -1,0 +1,598 @@
+{
+  "id": "shopping_app_home",
+  "type": "Screen",
+  "style": {
+    "display": "flex",
+    "flexDirection": "column",
+    "backgroundColor": "#000000",
+    "color": "#FFFFFF"
+  },
+  "children": [
+    {
+      "id": "header",
+      "type": "AppBar",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "flex-start",
+        "alignItems": "center",
+        "padding": "16px",
+        "backgroundColor": "#000000"
+      },
+      "children": [
+        {
+          "id": "header_title",
+          "type": "Text",
+          "text": "Play",
+          "style": {
+            "fontSize": "28px",
+            "fontWeight": "bold",
+            "color": "#FFFFFF"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tab_navigation",
+      "type": "Row",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+        "alignItems": "center",
+        "gap": "8px",
+        "padding": "16px",
+        "backgroundColor": "#000000"
+      },
+      "children": [
+        {
+          "id": "tab_for_you",
+          "type": "Chip",
+          "text": "For You",
+          "style": {
+            "backgroundColor": "#00CC44",
+            "color": "#000000",
+            "borderRadius": "20px",
+            "padding": "12px 24px",
+            "fontWeight": "500"
+          }
+        },
+        {
+          "id": "tab_beauty_binge",
+          "type": "Chip",
+          "text": "Beauty Binge",
+          "style": {
+            "backgroundColor": "#333333",
+            "color": "#FFFFFF",
+            "borderRadius": "20px",
+            "padding": "12px 24px"
+          }
+        },
+        {
+          "id": "tab_trends_for_him",
+          "type": "Chip",
+          "text": "Trends for him",
+          "style": {
+            "backgroundColor": "#333333",
+            "color": "#FFFFFF",
+            "borderRadius": "20px",
+            "padding": "12px 24px"
+          }
+        }
+      ]
+    },
+    {
+      "id": "content_feed",
+      "type": "Column",
+      "style": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "16px",
+        "padding": "0 16px",
+        "backgroundColor": "#000000"
+      },
+      "children": [
+        {
+          "id": "user_post_1",
+          "type": "Card",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "backgroundColor": "#000000",
+            "borderRadius": "12px",
+            "overflow": "hidden"
+          },
+          "children": [
+            {
+              "id": "user_header_1",
+              "type": "Row",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "gap": "12px",
+                "padding": "8px 0",
+                "backgroundColor": "#000000"
+              },
+              "children": [
+                {
+                  "id": "user_avatar_1",
+                  "type": "Avatar",
+                  "style": {
+                    "width": "40px",
+                    "height": "40px",
+                    "borderRadius": "50%",
+                    "backgroundColor": "#666666"
+                  }
+                },
+                {
+                  "id": "user_name_1",
+                  "type": "Text",
+                  "text": "Aryan Maheshwari",
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "500",
+                    "color": "#FFFFFF",
+                    "flex": 1
+                  }
+                },
+                {
+                  "id": "follow_button_1",
+                  "type": "Button",
+                  "text": "Follow",
+                  "style": {
+                    "backgroundColor": "transparent",
+                    "color": "#FFFFFF",
+                    "border": "1px solid #FFFFFF",
+                    "borderRadius": "4px",
+                    "padding": "6px 16px",
+                    "fontSize": "14px"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "video_container_1",
+              "type": "Card",
+              "style": {
+                "position": "relative",
+                "borderRadius": "12px",
+                "overflow": "hidden",
+                "aspectRatio": "16:9",
+                "backgroundColor": "#8B4513"
+              },
+              "children": [
+                {
+                  "id": "video_overlay_text",
+                  "type": "Text",
+                  "text": "Always in style!",
+                  "style": {
+                    "position": "absolute",
+                    "top": "20px",
+                    "left": "20px",
+                    "fontSize": "24px",
+                    "fontStyle": "italic",
+                    "color": "#FFD700",
+                    "fontWeight": "bold"
+                  }
+                },
+                {
+                  "id": "view_count",
+                  "type": "Badge",
+                  "text": "4.6K",
+                  "style": {
+                    "position": "absolute",
+                    "top": "20px",
+                    "right": "20px",
+                    "backgroundColor": "rgba(0,0,0,0.6)",
+                    "color": "#FFFFFF",
+                    "borderRadius": "16px",
+                    "padding": "4px 12px",
+                    "fontSize": "12px",
+                    "display": "flex",
+                    "alignItems": "center",
+                    "gap": "4px"
+                  }
+                },
+                {
+                  "id": "view_icon",
+                  "type": "Icon",
+                  "style": {
+                    "position": "absolute",
+                    "top": "24px",
+                    "right": "64px",
+                    "color": "#FFFFFF",
+                    "fontSize": "12px"
+                  }
+                },
+                {
+                  "id": "mute_button",
+                  "type": "Button",
+                  "style": {
+                    "position": "absolute",
+                    "bottom": "20px",
+                    "left": "20px",
+                    "backgroundColor": "rgba(0,0,0,0.6)",
+                    "borderRadius": "50%",
+                    "padding": "12px",
+                    "border": "none"
+                  },
+                  "children": [
+                    {
+                      "id": "mute_icon",
+                      "type": "Icon",
+                      "style": {
+                        "color": "#FFFFFF",
+                        "fontSize": "16px"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "products_button",
+                  "type": "Button",
+                  "text": "4 Products",
+                  "style": {
+                    "position": "absolute",
+                    "bottom": "20px",
+                    "right": "20px",
+                    "backgroundColor": "rgba(139,69,19,0.8)",
+                    "color": "#FFFFFF",
+                    "borderRadius": "20px",
+                    "padding": "8px 16px",
+                    "fontSize": "14px",
+                    "border": "none",
+                    "display": "flex",
+                    "alignItems": "center",
+                    "gap": "4px"
+                  }
+                },
+                {
+                  "id": "products_icon",
+                  "type": "Icon",
+                  "style": {
+                    "color": "#FFFFFF",
+                    "fontSize": "14px"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "post_footer_1",
+              "type": "Row",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "alignItems": "center",
+                "padding": "12px 0",
+                "backgroundColor": "#000000"
+              },
+              "children": [
+                {
+                  "id": "brand_name",
+                  "type": "Text",
+                  "text": "Fashion Mall Time",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#FFFFFF",
+                    "flex": 1
+                  }
+                },
+                {
+                  "id": "action_buttons",
+                  "type": "Row",
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "gap": "24px",
+                    "alignItems": "center"
+                  },
+                  "children": [
+                    {
+                      "id": "like_button",
+                      "type": "Column",
+                      "style": {
+                        "display": "flex",
+                        "flexDirection": "column",
+                        "alignItems": "center",
+                        "gap": "4px"
+                      },
+                      "children": [
+                        {
+                          "id": "like_icon",
+                          "type": "Icon",
+                          "style": {
+                            "color": "#FFFFFF",
+                            "fontSize": "24px"
+                          }
+                        },
+                        {
+                          "id": "like_text",
+                          "type": "Text",
+                          "text": "Like",
+                          "style": {
+                            "fontSize": "12px",
+                            "color": "#FFFFFF"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "share_button",
+                      "type": "Column",
+                      "style": {
+                        "display": "flex",
+                        "flexDirection": "column",
+                        "alignItems": "center",
+                        "gap": "4px"
+                      },
+                      "children": [
+                        {
+                          "id": "share_icon",
+                          "type": "Icon",
+                          "style": {
+                            "color": "#FFFFFF",
+                            "fontSize": "24px"
+                          }
+                        },
+                        {
+                          "id": "share_text",
+                          "type": "Text",
+                          "text": "Share",
+                          "style": {
+                            "fontSize": "12px",
+                            "color": "#FFFFFF"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "user_post_2",
+          "type": "Card",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "backgroundColor": "#000000"
+          },
+          "children": [
+            {
+              "id": "user_header_2",
+              "type": "Row",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "gap": "12px",
+                "padding": "8px 0",
+                "backgroundColor": "#000000"
+              },
+              "children": [
+                {
+                  "id": "user_avatar_2",
+                  "type": "Avatar",
+                  "style": {
+                    "width": "40px",
+                    "height": "40px",
+                    "borderRadius": "50%",
+                    "backgroundColor": "#666666"
+                  }
+                },
+                {
+                  "id": "user_name_2",
+                  "type": "Text",
+                  "text": "Sahil Kamble",
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "500",
+                    "color": "#FFFFFF",
+                    "flex": 1
+                  }
+                },
+                {
+                  "id": "follow_button_2",
+                  "type": "Button",
+                  "text": "Follow",
+                  "style": {
+                    "backgroundColor": "transparent",
+                    "color": "#FFFFFF",
+                    "border": "1px solid #FFFFFF",
+                    "borderRadius": "4px",
+                    "padding": "6px 16px",
+                    "fontSize": "14px"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bottom_navigation",
+      "type": "BottomNav",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+        "alignItems": "center",
+        "padding": "12px 0",
+        "backgroundColor": "#000000",
+        "borderTop": "1px solid #333333"
+      },
+      "children": [
+        {
+          "id": "nav_home",
+          "type": "Column",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "gap": "4px"
+          },
+          "children": [
+            {
+              "id": "nav_home_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#FFFFFF",
+                "fontSize": "24px"
+              }
+            },
+            {
+              "id": "nav_home_text",
+              "type": "Text",
+              "text": "Home",
+              "style": {
+                "fontSize": "12px",
+                "color": "#FFFFFF"
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_play",
+          "type": "Column",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "gap": "4px"
+          },
+          "children": [
+            {
+              "id": "nav_play_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#FFFFFF",
+                "fontSize": "24px"
+              }
+            },
+            {
+              "id": "nav_play_text",
+              "type": "Text",
+              "text": "Play",
+              "style": {
+                "fontSize": "12px",
+                "color": "#FFFFFF"
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_top_deals",
+          "type": "Column",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "gap": "4px"
+          },
+          "children": [
+            {
+              "id": "nav_top_deals_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#FFFFFF",
+                "fontSize": "24px"
+              }
+            },
+            {
+              "id": "nav_top_deals_text",
+              "type": "Text",
+              "text": "Top Deals",
+              "style": {
+                "fontSize": "12px",
+                "color": "#FFFFFF"
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_account",
+          "type": "Column",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "gap": "4px"
+          },
+          "children": [
+            {
+              "id": "nav_account_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#FFFFFF",
+                "fontSize": "24px"
+              }
+            },
+            {
+              "id": "nav_account_text",
+              "type": "Text",
+              "text": "Account",
+              "style": {
+                "fontSize": "12px",
+                "color": "#FFFFFF"
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_cart",
+          "type": "Column",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "gap": "4px",
+            "position": "relative"
+          },
+          "children": [
+            {
+              "id": "nav_cart_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#FFFFFF",
+                "fontSize": "24px"
+              }
+            },
+            {
+              "id": "nav_cart_text",
+              "type": "Text",
+              "text": "Cart",
+              "style": {
+                "fontSize": "12px",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "id": "cart_badge",
+              "type": "Badge",
+              "text": "3",
+              "style": {
+                "position": "absolute",
+                "top": "-4px",
+                "right": "-4px",
+                "backgroundColor": "#FF4444",
+                "color": "#FFFFFF",
+                "borderRadius": "50%",
+                "width": "18px",
+                "height": "18px",
+                "fontSize": "10px",
+                "display": "flex",
+                "justifyContent": "center",
+                "alignItems": "center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

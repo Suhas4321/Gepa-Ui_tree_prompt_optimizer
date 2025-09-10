@@ -1,0 +1,270 @@
+{
+  "id": "amazon_cart_screen",
+  "type": "Screen",
+  "style": {
+    "display": "flex",
+    "flexDirection": "column",
+    "backgroundColor": "#FFFFFF"
+  },
+  "children": [
+    {
+      "id": "search_bar",
+      "type": "SearchBar",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "margin": 16,
+        "paddingHorizontal": 12,
+        "paddingVertical": 8,
+        "borderRadius": 24,
+        "backgroundColor": "#F0F0F0",
+        "color": "#808080"
+      },
+      "children": [
+        {
+          "id": "search_input",
+          "type": "Text",
+          "text": "Search or ask a question",
+          "style": {
+            "color": "#808080",
+            "flex": 1
+          }
+        },
+        {
+          "id": "camera_icon",
+          "type": "Icon",
+          "style": {
+            "color": "#000000",
+            "marginLeft": 8
+          }
+        },
+        {
+          "id": "mic_icon",
+          "type": "Icon",
+          "style": {
+            "color": "#000000",
+            "marginLeft": 8
+          }
+        },
+        {
+          "id": "qr_icon",
+          "type": "Icon",
+          "style": {
+            "color": "#000000",
+            "marginLeft": 8
+          }
+        }
+      ]
+    },
+    {
+      "id": "cart_empty_state",
+      "type": "Column",
+      "style": {
+        "display": "flex",
+        "flexDirection": "column",
+        "alignItems": "center",
+        "marginTop": 40
+      },
+      "children": [
+        {
+          "id": "empty_cart_image",
+          "type": "Image",
+          "style": {
+            "width": 120,
+            "height": 120
+          }
+        },
+        {
+          "id": "empty_cart_text",
+          "type": "Text",
+          "text": "Your Amazon Cart is empty",
+          "style": {
+            "color": "#000000",
+            "fontSize": 20,
+            "fontWeight": "bold",
+            "marginTop": 12
+          }
+        },
+        {
+          "id": "shop_deals_link",
+          "type": "Text",
+          "text": "Shop today's deals",
+          "style": {
+            "color": "#0073BB",
+            "fontSize": 16,
+            "marginTop": 8
+          }
+        }
+      ]
+    },
+    {
+      "id": "sign_in_button",
+      "type": "Button",
+      "text": "Sign in to your account",
+      "style": {
+        "backgroundColor": "#FFC800",
+        "color": "#000000",
+        "margin": 16,
+        "paddingVertical": 14,
+        "borderRadius": 24,
+        "textAlign": "center",
+        "fontSize": 16
+      }
+    },
+    {
+      "id": "sign_up_button",
+      "type": "Button",
+      "text": "Sign up now",
+      "style": {
+        "backgroundColor": "transparent",
+        "color": "#000000",
+        "borderWidth": 1,
+        "borderColor": "#CCCCCC",
+        "paddingVertical": 14,
+        "marginHorizontal": 16,
+        "borderRadius": 24,
+        "textAlign": "center",
+        "fontSize": 16
+      }
+    },
+    {
+      "id": "continue_shopping_button",
+      "type": "Button",
+      "text": "Continue shopping",
+      "style": {
+        "backgroundColor": "#FFC800",
+        "color": "#000000",
+        "margin": 16,
+        "paddingVertical": 14,
+        "borderRadius": 24,
+        "textAlign": "center",
+        "fontSize": 16
+      }
+    },
+    {
+      "id": "bottom_navigation",
+      "type": "BottomNav",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+        "alignItems": "center",
+        "paddingVertical": 12,
+        "borderTopWidth": 1,
+        "borderTopColor": "#E0E0E0",
+        "backgroundColor": "#FFFFFF"
+      },
+      "children": [
+        {
+          "id": "nav_home",
+          "type": "Tab",
+          "text": "Home",
+          "style": {
+            "color": "#000000",
+            "fontSize": 12
+          },
+          "children": [
+            {
+              "id": "home_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#000000"
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_you",
+          "type": "Tab",
+          "text": "You",
+          "style": {
+            "color": "#000000",
+            "fontSize": 12
+          },
+          "children": [
+            {
+              "id": "you_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#000000"
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_wallet",
+          "type": "Tab",
+          "text": "Wallet",
+          "style": {
+            "color": "#000000",
+            "fontSize": 12
+          },
+          "children": [
+            {
+              "id": "wallet_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#000000"
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_cart",
+          "type": "Tab",
+          "text": "Cart",
+          "style": {
+            "color": "#00B0FF",
+            "fontSize": 12
+          },
+          "children": [
+            {
+              "id": "cart_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#00B0FF"
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_menu",
+          "type": "Tab",
+          "text": "Menu",
+          "style": {
+            "color": "#000000",
+            "fontSize": 12
+          },
+          "children": [
+            {
+              "id": "menu_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#000000"
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_rufus",
+          "type": "Tab",
+          "text": "Rufus",
+          "style": {
+            "color": "#000000",
+            "fontSize": 12
+          },
+          "children": [
+            {
+              "id": "rufus_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#000000"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

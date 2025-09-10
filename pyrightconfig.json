@@ -1,0 +1,19 @@
+{
+    "include": [
+        "."
+    ],
+    "exclude": [
+        "**/node_modules",
+        "**/__pycache__",
+        "venv"
+    ],
+    "extraPaths": [
+        "./gepa/src"
+    ],
+    "pythonVersion": "3.11",
+    "typeCheckingMode": "basic",
+    "useLibraryCodeForTypes": true,
+    "reportMissingImports": "warning",
+    "reportMissingTypeStubs": false,
+    "pythonPlatform": "Windows"
+}

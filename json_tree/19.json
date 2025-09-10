@@ -1,0 +1,1001 @@
+{
+  "id": "myntra_home",
+  "type": "Screen",
+  "style": {
+    "display": "flex",
+    "flexDirection": "column",
+    "backgroundColor": "#F5F5F5",
+    "color": "#333333"
+  },
+  "children": [
+    {
+      "id": "header",
+      "type": "AppBar",
+      "style": {
+        "display": "flex",
+        "flexDirection": "column",
+        "backgroundColor": "#F5F5F5",
+        "padding": "16px"
+      },
+      "children": [
+        {
+          "id": "delivery_header",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "justifyContent": "space-between",
+            "marginBottom": "16px"
+          },
+          "children": [
+            {
+              "id": "delivery_info",
+              "type": "Row",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "gap": "8px",
+                "flex": 1
+              },
+              "children": [
+                {
+                  "id": "location_icon",
+                  "type": "Icon",
+                  "style": {
+                    "color": "#333333",
+                    "fontSize": "16px"
+                  }
+                },
+                {
+                  "id": "delivery_text",
+                  "type": "Text",
+                  "text": "Deliver to Suhas - Shetty pg, opposite t...",
+                  "style": {
+                    "fontSize": "14px",
+                    "color": "#333333",
+                    "fontWeight": "500"
+                  }
+                },
+                {
+                  "id": "dropdown_icon",
+                  "type": "Icon",
+                  "style": {
+                    "color": "#333333",
+                    "fontSize": "16px"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "top_actions",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": "16px"
+          },
+          "children": [
+            {
+              "id": "search_bar",
+              "type": "SearchBar",
+              "style": {
+                "flex": 1,
+                "backgroundColor": "#FFFFFF",
+                "borderRadius": "24px",
+                "padding": "12px 16px",
+                "border": "1px solid #E0E0E0",
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "gap": "12px"
+              },
+              "children": [
+                {
+                  "id": "myntra_logo",
+                  "type": "Icon",
+                  "style": {
+                    "color": "#FF3F6C",
+                    "fontSize": "20px"
+                  }
+                },
+                {
+                  "id": "search_input",
+                  "type": "Text",
+                  "text": "Search \"Tops\"",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#999999",
+                    "flex": 1
+                  }
+                },
+                {
+                  "id": "search_icon",
+                  "type": "Icon",
+                  "style": {
+                    "color": "#999999",
+                    "fontSize": "20px"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "notification_bell",
+              "type": "Button",
+              "style": {
+                "position": "relative",
+                "backgroundColor": "transparent",
+                "padding": "8px"
+              },
+              "children": [
+                {
+                  "id": "bell_icon",
+                  "type": "Icon",
+                  "style": {
+                    "color": "#333333",
+                    "fontSize": "24px"
+                  }
+                },
+                {
+                  "id": "notification_badge",
+                  "type": "Badge",
+                  "text": "2",
+                  "style": {
+                    "position": "absolute",
+                    "top": "0px",
+                    "right": "0px",
+                    "backgroundColor": "#FF3F6C",
+                    "color": "#FFFFFF",
+                    "borderRadius": "50%",
+                    "width": "18px",
+                    "height": "18px",
+                    "fontSize": "10px",
+                    "display": "flex",
+                    "justifyContent": "center",
+                    "alignItems": "center"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "wishlist_button",
+              "type": "Button",
+              "style": {
+                "backgroundColor": "transparent",
+                "padding": "8px"
+              },
+              "children": [
+                {
+                  "id": "heart_icon",
+                  "type": "Icon",
+                  "style": {
+                    "color": "#333333",
+                    "fontSize": "24px"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "profile_button",
+              "type": "Button",
+              "style": {
+                "backgroundColor": "transparent",
+                "padding": "8px"
+              },
+              "children": [
+                {
+                  "id": "profile_icon",
+                  "type": "Icon",
+                  "style": {
+                    "color": "#333333",
+                    "fontSize": "24px"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "category_tabs",
+      "type": "Row",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "padding": "0 16px 16px 16px",
+        "backgroundColor": "#F5F5F5"
+      },
+      "children": [
+        {
+          "id": "tab_all",
+          "type": "Tab",
+          "text": "All",
+          "style": {
+            "fontSize": "16px",
+            "color": "#FF3F6C",
+            "fontWeight": "600",
+            "borderBottom": "2px solid #FF3F6C",
+            "paddingBottom": "8px"
+          }
+        },
+        {
+          "id": "tab_men",
+          "type": "Tab",
+          "text": "Men",
+          "style": {
+            "fontSize": "16px",
+            "color": "#666666",
+            "paddingBottom": "8px"
+          }
+        },
+        {
+          "id": "tab_women",
+          "type": "Tab",
+          "text": "Women",
+          "style": {
+            "fontSize": "16px",
+            "color": "#666666",
+            "paddingBottom": "8px"
+          }
+        },
+        {
+          "id": "tab_kids",
+          "type": "Tab",
+          "text": "Kids",
+          "style": {
+            "fontSize": "16px",
+            "color": "#666666",
+            "paddingBottom": "8px"
+          }
+        },
+        {
+          "id": "menu_button",
+          "type": "Button",
+          "style": {
+            "backgroundColor": "#333333",
+            "borderRadius": "8px",
+            "padding": "8px",
+            "width": "40px",
+            "height": "40px",
+            "display": "flex",
+            "justifyContent": "center",
+            "alignItems": "center"
+          },
+          "children": [
+            {
+              "id": "grid_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#FFFFFF",
+                "fontSize": "20px"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "category_grid",
+      "type": "Grid",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+        "padding": "16px",
+        "backgroundColor": "#F5F5F5",
+        "gap": "8px"
+      },
+      "children": [
+        {
+          "id": "category_fashion",
+          "type": "Column",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "gap": "8px"
+          },
+          "children": [
+            {
+              "id": "fashion_image",
+              "type": "Image",
+              "style": {
+                "width": "60px",
+                "height": "60px",
+                "borderRadius": "12px",
+                "backgroundColor": "#333333"
+              }
+            },
+            {
+              "id": "fashion_text",
+              "type": "Text",
+              "text": "Fashion",
+              "style": {
+                "fontSize": "12px",
+                "color": "#FF3F6C",
+                "fontWeight": "500"
+              }
+            }
+          ]
+        },
+        {
+          "id": "category_beauty",
+          "type": "Column",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "gap": "8px"
+          },
+          "children": [
+            {
+              "id": "beauty_image",
+              "type": "Image",
+              "style": {
+                "width": "60px",
+                "height": "60px",
+                "borderRadius": "12px",
+                "backgroundColor": "#DDDDDD"
+              }
+            },
+            {
+              "id": "beauty_text",
+              "type": "Text",
+              "text": "Beauty",
+              "style": {
+                "fontSize": "12px",
+                "color": "#666666"
+              }
+            }
+          ]
+        },
+        {
+          "id": "category_home",
+          "type": "Column",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "gap": "8px"
+          },
+          "children": [
+            {
+              "id": "home_image",
+              "type": "Image",
+              "style": {
+                "width": "60px",
+                "height": "60px",
+                "borderRadius": "12px",
+                "backgroundColor": "#DDDDDD"
+              }
+            },
+            {
+              "id": "home_text",
+              "type": "Text",
+              "text": "Home & Living",
+              "style": {
+                "fontSize": "12px",
+                "color": "#666666"
+              }
+            }
+          ]
+        },
+        {
+          "id": "category_footwear",
+          "type": "Column",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "gap": "8px"
+          },
+          "children": [
+            {
+              "id": "footwear_image",
+              "type": "Image",
+              "style": {
+                "width": "60px",
+                "height": "60px",
+                "borderRadius": "12px",
+                "backgroundColor": "#DDDDDD"
+              }
+            },
+            {
+              "id": "footwear_text",
+              "type": "Text",
+              "text": "Footwear",
+              "style": {
+                "fontSize": "12px",
+                "color": "#666666"
+              }
+            }
+          ]
+        },
+        {
+          "id": "category_accessories",
+          "type": "Column",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "gap": "8px"
+          },
+          "children": [
+            {
+              "id": "accessories_image",
+              "type": "Image",
+              "style": {
+                "width": "60px",
+                "height": "60px",
+                "borderRadius": "12px",
+                "backgroundColor": "#DDDDDD"
+              }
+            },
+            {
+              "id": "accessories_text",
+              "type": "Text",
+              "text": "Accessories",
+              "style": {
+                "fontSize": "12px",
+                "color": "#666666"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "main_content",
+      "type": "Column",
+      "style": {
+        "display": "flex",
+        "flexDirection": "column",
+        "backgroundColor": "#F5F5F5",
+        "padding": "0 16px"
+      },
+      "children": [
+        {
+          "id": "brand_brigade_banner",
+          "type": "Card",
+          "style": {
+            "borderRadius": "16px",
+            "overflow": "hidden",
+            "marginBottom": "16px",
+            "backgroundColor": "#00CCDD"
+          },
+          "children": [
+            {
+              "id": "banner_content",
+              "type": "Row",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "justifyContent": "space-between",
+                "padding": "24px",
+                "backgroundColor": "#00CCDD"
+              },
+              "children": [
+                {
+                  "id": "model_left",
+                  "type": "Image",
+                  "style": {
+                    "width": "80px",
+                    "height": "120px",
+                    "backgroundColor": "#FFFFFF"
+                  }
+                },
+                {
+                  "id": "banner_center",
+                  "type": "Column",
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "alignItems": "center",
+                    "gap": "16px"
+                  },
+                  "children": [
+                    {
+                      "id": "myntra_logo_banner",
+                      "type": "Icon",
+                      "style": {
+                        "color": "#FF3F6C",
+                        "fontSize": "24px"
+                      }
+                    },
+                    {
+                      "id": "brigade_container",
+                      "type": "Card",
+                      "style": {
+                        "backgroundColor": "#FF6600",
+                        "borderRadius": "12px",
+                        "padding": "16px 20px",
+                        "position": "relative"
+                      },
+                      "children": [
+                        {
+                          "id": "brand_brigade_text",
+                          "type": "Text",
+                          "text": "BRAND BRIGADE SALE",
+                          "style": {
+                            "fontSize": "16px",
+                            "fontWeight": "bold",
+                            "color": "#FFFFFF",
+                            "textAlign": "center",
+                            "marginBottom": "8px"
+                          }
+                        },
+                        {
+                          "id": "lakme_text",
+                          "type": "Text",
+                          "text": "LAKME",
+                          "style": {
+                            "fontSize": "20px",
+                            "fontWeight": "bold",
+                            "color": "#000000",
+                            "backgroundColor": "#FFFFFF",
+                            "padding": "8px 16px",
+                            "borderRadius": "8px",
+                            "textAlign": "center",
+                            "marginBottom": "16px"
+                          }
+                        },
+                        {
+                          "id": "offer_text",
+                          "type": "Column",
+                          "style": {
+                            "display": "flex",
+                            "flexDirection": "column",
+                            "alignItems": "center",
+                            "gap": "4px"
+                          },
+                          "children": [
+                            {
+                              "id": "best_brands_text",
+                              "type": "Text",
+                              "text": "Best Of Brands, Best Of Deals!",
+                              "style": {
+                                "fontSize": "14px",
+                                "color": "#FFFFFF",
+                                "textAlign": "center"
+                              }
+                            },
+                            {
+                              "id": "discount_text",
+                              "type": "Text",
+                              "text": "40-80% OFF",
+                              "style": {
+                                "fontSize": "24px",
+                                "fontWeight": "bold",
+                                "color": "#FFFFFF",
+                                "textAlign": "center"
+                              }
+                            },
+                            {
+                              "id": "shop_now_button",
+                              "type": "Button",
+                              "text": "Shop Now",
+                              "style": {
+                                "backgroundColor": "#FFFFFF",
+                                "color": "#FF6600",
+                                "borderRadius": "20px",
+                                "padding": "8px 24px",
+                                "fontSize": "14px",
+                                "fontWeight": "600",
+                                "border": "none",
+                                "marginTop": "12px",
+                                "display": "flex",
+                                "alignItems": "center",
+                                "gap": "4px"
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "model_right",
+                  "type": "Image",
+                  "style": {
+                    "width": "80px",
+                    "height": "120px",
+                    "backgroundColor": "#FFFFFF"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pagination_dots",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "gap": "8px",
+            "marginBottom": "16px"
+          },
+          "children": [
+            {
+              "id": "dot_active",
+              "type": "Badge",
+              "style": {
+                "width": "8px",
+                "height": "8px",
+                "borderRadius": "50%",
+                "backgroundColor": "#333333"
+              }
+            },
+            {
+              "id": "dot_inactive_1",
+              "type": "Badge",
+              "style": {
+                "width": "8px",
+                "height": "8px",
+                "borderRadius": "50%",
+                "backgroundColor": "#CCCCCC"
+              }
+            },
+            {
+              "id": "dot_inactive_2",
+              "type": "Badge",
+              "style": {
+                "width": "8px",
+                "height": "8px",
+                "borderRadius": "50%",
+                "backgroundColor": "#CCCCCC"
+              }
+            },
+            {
+              "id": "dot_inactive_3",
+              "type": "Badge",
+              "style": {
+                "width": "8px",
+                "height": "8px",
+                "borderRadius": "50%",
+                "backgroundColor": "#CCCCCC"
+              }
+            },
+            {
+              "id": "dot_inactive_4",
+              "type": "Badge",
+              "style": {
+                "width": "8px",
+                "height": "8px",
+                "borderRadius": "50%",
+                "backgroundColor": "#CCCCCC"
+              }
+            }
+          ]
+        },
+        {
+          "id": "sponsored_section",
+          "type": "Column",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "gap": "12px",
+            "marginBottom": "16px"
+          },
+          "children": [
+            {
+              "id": "sponsored_text",
+              "type": "Text",
+              "text": "SPONSORED BY",
+              "style": {
+                "fontSize": "12px",
+                "color": "#999999",
+                "fontWeight": "500"
+              }
+            },
+            {
+              "id": "inddus_logo",
+              "type": "Image",
+              "style": {
+                "height": "24px",
+                "width": "120px",
+                "backgroundColor": "#DDDDDD"
+              }
+            }
+          ]
+        },
+        {
+          "id": "cashback_banner",
+          "type": "Card",
+          "style": {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": "12px",
+            "padding": "16px",
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": "16px",
+            "marginBottom": "16px",
+            "border": "1px solid #E0E0E0"
+          },
+          "children": [
+            {
+              "id": "bank_card_image",
+              "type": "Image",
+              "style": {
+                "width": "60px",
+                "height": "40px",
+                "borderRadius": "8px",
+                "backgroundColor": "#4169E1"
+              }
+            },
+            {
+              "id": "cashback_info",
+              "type": "Column",
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "gap": "4px",
+                "flex": 1
+              },
+              "children": [
+                {
+                  "id": "cashback_title",
+                  "type": "Text",
+                  "text": "Flat 7.5% Cashback*",
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "600",
+                    "color": "#333333"
+                  }
+                },
+                {
+                  "id": "cashback_subtitle",
+                  "type": "Text",
+                  "text": "On Flipkart Axis Bank Credit Cards",
+                  "style": {
+                    "fontSize": "14px",
+                    "color": "#666666"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "continue_browsing",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "justifyContent": "space-between",
+            "marginBottom": "16px"
+          },
+          "children": [
+            {
+              "id": "continue_text",
+              "type": "Text",
+              "text": "Continue Browsing These",
+              "style": {
+                "fontSize": "18px",
+                "fontWeight": "600",
+                "color": "#333333"
+              }
+            },
+            {
+              "id": "play_to_slay_button",
+              "type": "Button",
+              "text": "▶ PLAY TO SLAY",
+              "style": {
+                "backgroundColor": "#000000",
+                "color": "#FFFFFF",
+                "borderRadius": "20px",
+                "padding": "10px 20px",
+                "fontSize": "14px",
+                "fontWeight": "600",
+                "border": "none"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bottom_navigation",
+      "type": "BottomNav",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+        "alignItems": "center",
+        "padding": "12px 0",
+        "backgroundColor": "#FFFFFF",
+        "borderTop": "1px solid #E0E0E0"
+      },
+      "children": [
+        {
+          "id": "nav_home",
+          "type": "Column",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "gap": "4px"
+          },
+          "children": [
+            {
+              "id": "nav_home_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#FF3F6C",
+                "fontSize": "20px"
+              }
+            },
+            {
+              "id": "nav_home_text",
+              "type": "Text",
+              "text": "Home",
+              "style": {
+                "fontSize": "12px",
+                "color": "#FF3F6C",
+                "fontWeight": "500"
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_fwd",
+          "type": "Column",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "gap": "4px"
+          },
+          "children": [
+            {
+              "id": "nav_fwd_text_main",
+              "type": "Text",
+              "text": "fwd",
+              "style": {
+                "fontSize": "16px",
+                "color": "#333333",
+                "fontWeight": "bold",
+                "fontStyle": "italic"
+              }
+            },
+            {
+              "id": "nav_fwd_text_sub",
+              "type": "Text",
+              "text": "Under ₹999",
+              "style": {
+                "fontSize": "10px",
+                "color": "#666666"
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_now",
+          "type": "Column",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "gap": "4px"
+          },
+          "children": [
+            {
+              "id": "nav_now_text_main",
+              "type": "Text",
+              "text": "now",
+              "style": {
+                "fontSize": "16px",
+                "color": "#333333",
+                "fontWeight": "bold",
+                "fontStyle": "italic"
+              }
+            },
+            {
+              "id": "nav_now_text_sub",
+              "type": "Text",
+              "text": "From 30 min",
+              "style": {
+                "fontSize": "10px",
+                "color": "#666666"
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_luxe",
+          "type": "Column",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "gap": "4px"
+          },
+          "children": [
+            {
+              "id": "nav_luxe_text_main",
+              "type": "Text",
+              "text": "LUXE",
+              "style": {
+                "fontSize": "14px",
+                "color": "#333333",
+                "fontWeight": "bold",
+                "letterSpacing": "2px"
+              }
+            },
+            {
+              "id": "nav_luxe_text_sub",
+              "type": "Text",
+              "text": "Luxury",
+              "style": {
+                "fontSize": "10px",
+                "color": "#666666"
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_bag",
+          "type": "Column",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "gap": "4px",
+            "position": "relative"
+          },
+          "children": [
+            {
+              "id": "nav_bag_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#333333",
+                "fontSize": "20px"
+              }
+            },
+            {
+              "id": "nav_bag_text",
+              "type": "Text",
+              "text": "Bag",
+              "style": {
+                "fontSize": "12px",
+                "color": "#333333"
+              }
+            },
+            {
+              "id": "bag_badge",
+              "type": "Badge",
+              "text": "3",
+              "style": {
+                "position": "absolute",
+                "top": "-4px",
+                "right": "-4px",
+                "backgroundColor": "#FF3F6C",
+                "color": "#FFFFFF",
+                "borderRadius": "50%",
+                "width": "16px",
+                "height": "16px",
+                "fontSize": "10px",
+                "display": "flex",
+                "justifyContent": "center",
+                "alignItems": "center"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

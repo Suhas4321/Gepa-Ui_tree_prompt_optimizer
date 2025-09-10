@@ -1,0 +1,893 @@
+{
+  "id": "flipkart_cart_screen",
+  "type": "Screen",
+  "style": {
+    "display": "flex",
+    "flexDirection": "column",
+    "backgroundColor": "#FFFFFF"
+  },
+  "children": [
+    {
+      "id": "header",
+      "type": "AppBar",
+      "style": {
+        "display": "flex",
+        "flexDirection": "column",
+        "paddingHorizontal": 16,
+        "paddingVertical": 12,
+        "backgroundColor": "#FFFFFF"
+      },
+      "children": [
+        {
+          "id": "my_cart_text",
+          "type": "Text",
+          "text": "My Cart",
+          "style": {
+            "color": "#000000",
+            "fontSize": 20,
+            "fontWeight": "bold",
+            "marginBottom": 16
+          }
+        },
+        {
+          "id": "tab_strip",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "gap": 32
+          },
+          "children": [
+            {
+              "id": "tab_flipkart",
+              "type": "Tab",
+              "text": "Flipkart (8)",
+              "style": {
+                "color": "#2874F0",
+                "fontSize": 16,
+                "fontWeight": "500",
+                "borderBottomWidth": 2,
+                "borderBottomColor": "#2874F0"
+              }
+            },
+            {
+              "id": "tab_grocery",
+              "type": "Tab",
+              "text": "Grocery",
+              "style": {
+                "color": "#666666",
+                "fontSize": 16
+              }
+            },
+            {
+              "id": "tab_minutes",
+              "type": "Tab",
+              "text": "Minutes",
+              "style": {
+                "color": "#666666",
+                "fontSize": 16
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "delivery_section",
+      "type": "Row",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "paddingHorizontal": 16,
+        "paddingVertical": 12,
+        "backgroundColor": "#F5F5F5"
+      },
+      "children": [
+        {
+          "id": "delivery_info",
+          "type": "Column",
+          "style": {
+            "flex": 1
+          },
+          "children": [
+            {
+              "id": "delivery_to",
+              "type": "Text",
+              "text": "Deliver to: Suhas, 560078",
+              "style": {
+                "color": "#000000",
+                "fontSize": 14,
+                "fontWeight": "500"
+              }
+            },
+            {
+              "id": "delivery_address",
+              "type": "Text",
+              "text": "Shetty pg, beside Santosh Bar an...",
+              "style": {
+                "color": "#666666",
+                "fontSize": 12,
+                "marginTop": 2
+              }
+            }
+          ]
+        },
+        {
+          "id": "home_badge",
+          "type": "Chip",
+          "text": "HOME",
+          "style": {
+            "backgroundColor": "#E0E0E0",
+            "color": "#666666",
+            "fontSize": 10,
+            "paddingHorizontal": 8,
+            "paddingVertical": 4,
+            "borderRadius": 4,
+            "marginRight": 8
+          }
+        },
+        {
+          "id": "change_button",
+          "type": "Button",
+          "text": "Change",
+          "style": {
+            "color": "#2874F0",
+            "fontSize": 14,
+            "borderWidth": 1,
+            "borderColor": "#2874F0",
+            "paddingHorizontal": 12,
+            "paddingVertical": 6,
+            "borderRadius": 4
+          }
+        }
+      ]
+    },
+    {
+      "id": "product_card",
+      "type": "Card",
+      "style": {
+        "backgroundColor": "#FFFFFF",
+        "margin": 16,
+        "padding": 16,
+        "borderRadius": 8,
+        "elevation": 2
+      },
+      "children": [
+        {
+          "id": "product_main",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row"
+          },
+          "children": [
+            {
+              "id": "product_image",
+              "type": "Image",
+              "style": {
+                "width": 80,
+                "height": 80,
+                "borderRadius": 8,
+                "backgroundColor": "#F0F0F0"
+              }
+            },
+            {
+              "id": "zoom_icon",
+              "type": "Icon",
+              "style": {
+                "position": "absolute",
+                "bottom": 4,
+                "right": 4,
+                "backgroundColor": "rgba(0,0,0,0.7)",
+                "color": "#FFFFFF",
+                "borderRadius": 4,
+                "padding": 4
+              }
+            },
+            {
+              "id": "product_details",
+              "type": "Column",
+              "style": {
+                "flex": 1,
+                "marginLeft": 12
+              },
+              "children": [
+                {
+                  "id": "product_name",
+                  "type": "Text",
+                  "text": "MOTOROLA g35 5G (Midnight...",
+                  "style": {
+                    "color": "#000000",
+                    "fontSize": 16,
+                    "fontWeight": "bold"
+                  }
+                },
+                {
+                  "id": "product_spec",
+                  "type": "Text",
+                  "text": "4 GB RAM",
+                  "style": {
+                    "color": "#666666",
+                    "fontSize": 14,
+                    "marginTop": 4
+                  }
+                },
+                {
+                  "id": "rating_section",
+                  "type": "Row",
+                  "style": {
+                    "alignItems": "center",
+                    "marginTop": 8
+                  },
+                  "children": [
+                    {
+                      "id": "star_rating",
+                      "type": "Row",
+                      "style": {
+                        "alignItems": "center"
+                      },
+                      "children": [
+                        {
+                          "id": "stars",
+                          "type": "Icon",
+                          "style": {
+                            "color": "#4CAF50"
+                          }
+                        },
+                        {
+                          "id": "rating_value",
+                          "type": "Text",
+                          "text": "4.2",
+                          "style": {
+                            "color": "#4CAF50",
+                            "fontWeight": "bold",
+                            "marginLeft": 4
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "id": "rating_count",
+                      "type": "Text",
+                      "text": "(71,088)",
+                      "style": {
+                        "color": "#666666",
+                        "marginLeft": 8
+                      }
+                    },
+                    {
+                      "id": "assured_badge",
+                      "type": "Icon",
+                      "style": {
+                        "color": "#2874F0",
+                        "marginLeft": 8
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "quantity_section",
+                  "type": "Row",
+                  "style": {
+                    "alignItems": "center",
+                    "marginTop": 12
+                  },
+                  "children": [
+                    {
+                      "id": "qty_label",
+                      "type": "Text",
+                      "text": "Qty:",
+                      "style": {
+                        "color": "#000000",
+                        "marginRight": 8
+                      }
+                    },
+                    {
+                      "id": "qty_dropdown",
+                      "type": "Button",
+                      "text": "1",
+                      "style": {
+                        "borderWidth": 1,
+                        "borderColor": "#CCCCCC",
+                        "paddingHorizontal": 12,
+                        "paddingVertical": 6,
+                        "borderRadius": 4,
+                        "color": "#000000"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pricing_section",
+          "type": "Column",
+          "style": {
+            "marginTop": 16
+          },
+          "children": [
+            {
+              "id": "discount_price_row",
+              "type": "Row",
+              "style": {
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "id": "discount_badge",
+                  "type": "Text",
+                  "text": "↓20%",
+                  "style": {
+                    "color": "#4CAF50",
+                    "fontWeight": "bold",
+                    "marginRight": 8
+                  }
+                },
+                {
+                  "id": "original_price",
+                  "type": "Text",
+                  "text": "₹12,499",
+                  "style": {
+                    "color": "#666666",
+                    "textDecorationLine": "line-through",
+                    "marginRight": 8
+                  }
+                },
+                {
+                  "id": "current_price",
+                  "type": "Text",
+                  "text": "₹9,999",
+                  "style": {
+                    "color": "#000000",
+                    "fontSize": 18,
+                    "fontWeight": "bold"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "wow_price",
+              "type": "Row",
+              "style": {
+                "alignItems": "center",
+                "marginTop": 4
+              },
+              "children": [
+                {
+                  "id": "wow_badge",
+                  "type": "Chip",
+                  "text": "WOW",
+                  "style": {
+                    "backgroundColor": "#2874F0",
+                    "color": "#FFFFFF",
+                    "fontSize": 10,
+                    "paddingHorizontal": 6,
+                    "paddingVertical": 2,
+                    "borderRadius": 4,
+                    "marginRight": 8
+                  }
+                },
+                {
+                  "id": "wow_price_text",
+                  "type": "Text",
+                  "text": "Buy at ₹9,499",
+                  "style": {
+                    "color": "#2874F0",
+                    "fontWeight": "bold"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "protection_fee",
+              "type": "Text",
+              "text": "+ ₹29 Protect Promise Fee",
+              "style": {
+                "color": "#666666",
+                "fontSize": 12,
+                "marginTop": 4
+              }
+            },
+            {
+              "id": "pay_option",
+              "type": "Text",
+              "text": "Or Pay ₹9,899 + 100",
+              "style": {
+                "color": "#666666",
+                "fontSize": 12,
+                "marginTop": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "delivery_section_card",
+          "type": "Column",
+          "style": {
+            "marginTop": 16
+          },
+          "children": [
+            {
+              "id": "express_delivery",
+              "type": "Row",
+              "style": {
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "id": "express_icon",
+                  "type": "Icon",
+                  "style": {
+                    "color": "#000000",
+                    "marginRight": 8
+                  }
+                },
+                {
+                  "id": "express_text",
+                  "type": "Text",
+                  "text": "EXPRESS Delivery in 2 days, Fri",
+                  "style": {
+                    "color": "#000000",
+                    "fontWeight": "bold"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "order_timer",
+              "type": "Text",
+              "text": "Order in 48m 56s",
+              "style": {
+                "color": "#666666",
+                "fontSize": 12,
+                "marginTop": 4
+              }
+            },
+            {
+              "id": "minutes_delivery",
+              "type": "Row",
+              "style": {
+                "alignItems": "center",
+                "marginTop": 8
+              },
+              "children": [
+                {
+                  "id": "delivery_in_text",
+                  "type": "Text",
+                  "text": "Delivery in",
+                  "style": {
+                    "color": "#000000",
+                    "marginRight": 8
+                  }
+                },
+                {
+                  "id": "minutes_badge",
+                  "type": "Chip",
+                  "text": "7",
+                  "style": {
+                    "backgroundColor": "#E91E63",
+                    "color": "#FFFFFF",
+                    "fontWeight": "bold",
+                    "borderRadius": 4,
+                    "paddingHorizontal": 4,
+                    "paddingVertical": 2
+                  }
+                },
+                {
+                  "id": "minutes_text",
+                  "type": "Text",
+                  "text": "MINUTES",
+                  "style": {
+                    "color": "#E91E63",
+                    "fontWeight": "bold",
+                    "marginLeft": 4,
+                    "marginRight": 8
+                  }
+                },
+                {
+                  "id": "delivery_fee",
+                  "type": "Text",
+                  "text": "• ₹29",
+                  "style": {
+                    "color": "#666666"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "action_buttons",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "space-around",
+            "marginTop": 16,
+            "paddingTop": 16,
+            "borderTopWidth": 1,
+            "borderTopColor": "#E0E0E0"
+          },
+          "children": [
+            {
+              "id": "remove_button",
+              "type": "Button",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "id": "remove_icon",
+                  "type": "Icon",
+                  "style": {
+                    "color": "#666666",
+                    "marginRight": 4
+                  }
+                },
+                {
+                  "id": "remove_text",
+                  "type": "Text",
+                  "text": "Remove",
+                  "style": {
+                    "color": "#666666"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "save_for_later_button",
+              "type": "Button",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "id": "save_icon",
+                  "type": "Icon",
+                  "style": {
+                    "color": "#666666",
+                    "marginRight": 4
+                  }
+                },
+                {
+                  "id": "save_text",
+                  "type": "Text",
+                  "text": "Save for later",
+                  "style": {
+                    "color": "#666666"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "buy_now_button",
+              "type": "Button",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "id": "buy_icon",
+                  "type": "Icon",
+                  "style": {
+                    "color": "#666666",
+                    "marginRight": 4
+                  }
+                },
+                {
+                  "id": "buy_text",
+                  "type": "Text",
+                  "text": "Buy this now",
+                  "style": {
+                    "color": "#666666"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "screen_care_plan",
+      "type": "Row",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "backgroundColor": "#E8F5E8",
+        "marginHorizontal": 16,
+        "paddingHorizontal": 16,
+        "paddingVertical": 12,
+        "borderRadius": 8
+      },
+      "children": [
+        {
+          "id": "screen_care_text",
+          "type": "Text",
+          "text": "Screen Care Plan",
+          "style": {
+            "color": "#000000",
+            "fontSize": 16
+          }
+        },
+        {
+          "id": "close_icon",
+          "type": "Icon",
+          "style": {
+            "color": "#666666"
+          }
+        }
+      ]
+    },
+    {
+      "id": "order_summary",
+      "type": "Column",
+      "style": {
+        "backgroundColor": "#E8F5E8",
+        "margin": 16,
+        "padding": 16,
+        "borderRadius": 8
+      },
+      "children": [
+        {
+          "id": "savings_row",
+          "type": "Row",
+          "style": {
+            "alignItems": "center",
+            "marginBottom": 12
+          },
+          "children": [
+            {
+              "id": "savings_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#4CAF50",
+                "marginRight": 8
+              }
+            },
+            {
+              "id": "savings_text",
+              "type": "Text",
+              "text": "You'll save ₹4,530 on this order!",
+              "style": {
+                "color": "#4CAF50",
+                "fontWeight": "bold"
+              }
+            }
+          ]
+        },
+        {
+          "id": "price_summary",
+          "type": "Row",
+          "style": {
+            "justifyContent": "space-between",
+            "alignItems": "center"
+          },
+          "children": [
+            {
+              "id": "price_breakdown",
+              "type": "Column",
+              "children": [
+                {
+                  "id": "original_total",
+                  "type": "Text",
+                  "text": "15,396",
+                  "style": {
+                    "color": "#666666",
+                    "textDecorationLine": "line-through",
+                    "fontSize": 12
+                  }
+                },
+                {
+                  "id": "final_price",
+                  "type": "Text",
+                  "text": "10,866",
+                  "style": {
+                    "color": "#000000",
+                    "fontSize": 20,
+                    "fontWeight": "bold"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "place_order_button",
+              "type": "Button",
+              "text": "Place Order",
+              "style": {
+                "backgroundColor": "#FFB300",
+                "color": "#000000",
+                "fontSize": 16,
+                "fontWeight": "bold",
+                "paddingHorizontal": 24,
+                "paddingVertical": 12,
+                "borderRadius": 24
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bottom_navigation",
+      "type": "BottomNav",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+        "alignItems": "center",
+        "paddingVertical": 12,
+        "backgroundColor": "#FFFFFF",
+        "borderTopWidth": 1,
+        "borderTopColor": "#E0E0E0"
+      },
+      "children": [
+        {
+          "id": "nav_home",
+          "type": "Tab",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center"
+          },
+          "children": [
+            {
+              "id": "home_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#666666"
+              }
+            },
+            {
+              "id": "home_text",
+              "type": "Text",
+              "text": "Home",
+              "style": {
+                "color": "#666666",
+                "fontSize": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_play",
+          "type": "Tab",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center"
+          },
+          "children": [
+            {
+              "id": "play_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#666666"
+              }
+            },
+            {
+              "id": "play_text",
+              "type": "Text",
+              "text": "Play",
+              "style": {
+                "color": "#666666",
+                "fontSize": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_top_deals",
+          "type": "Tab",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center"
+          },
+          "children": [
+            {
+              "id": "top_deals_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#666666"
+              }
+            },
+            {
+              "id": "top_deals_text",
+              "type": "Text",
+              "text": "Top Deals",
+              "style": {
+                "color": "#666666",
+                "fontSize": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_account",
+          "type": "Tab",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center"
+          },
+          "children": [
+            {
+              "id": "account_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#666666"
+              }
+            },
+            {
+              "id": "account_text",
+              "type": "Text",
+              "text": "Account",
+              "style": {
+                "color": "#666666",
+                "fontSize": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_cart",
+          "type": "Tab",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "position": "relative"
+          },
+          "children": [
+            {
+              "id": "cart_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#2874F0"
+              }
+            },
+            {
+              "id": "cart_text",
+              "type": "Text",
+              "text": "Cart",
+              "style": {
+                "color": "#2874F0",
+                "fontSize": 10,
+                "fontWeight": "500"
+              }
+            },
+            {
+              "id": "cart_badge",
+              "type": "Badge",
+              "text": "8",
+              "style": {
+                "backgroundColor": "#FF4444",
+                "color": "#FFFFFF",
+                "borderRadius": 10,
+                "fontSize": 8,
+                "position": "absolute",
+                "top": -4,
+                "right": 8,
+                "paddingHorizontal": 4,
+                "paddingVertical": 2
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

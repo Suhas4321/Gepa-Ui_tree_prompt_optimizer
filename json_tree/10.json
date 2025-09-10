@@ -1,0 +1,202 @@
+{
+  "node": "Screen",
+  "id": "ir_remote_home",
+  "style": {
+    "display": "flex",
+    "flexDirection": "column",
+    "justifyContent": "flex-start",
+    "alignItems": "stretch",
+    "gap": "md",
+    "overflowY": "auto",
+    "backgroundColor": "#000000"
+  },
+  "children": [
+    {
+      "node": "AppBar",
+      "id": "header",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "gap": "sm",
+        "padding": "md",
+        "color": "#FFFFFF"
+      },
+      "children": [
+        {
+          "node": "Text",
+          "id": "title",
+          "text": "IR Remote",
+          "style": {
+            "alignSelf": "flex-start",
+            "fontSize": "24px",
+            "fontWeight": "bold",
+            "color": "#FFFFFF"
+          }
+        },
+        {
+          "node": "Icon",
+          "id": "ic_menu",
+          "style": {
+            "alignSelf": "flex-end",
+            "color": "#FFFFFF"
+          }
+        }
+      ]
+    },
+    {
+      "node": "Text",
+      "id": "subtitle",
+      "text": "3 remotes",
+      "style": {
+        "alignSelf": "flex-start",
+        "paddingLeft": "md",
+        "paddingBottom": "sm",
+        "fontSize": "16px",
+        "color": "#AAAAAA"
+      }
+    },
+    {
+      "node": "Grid",
+      "id": "remote_tiles",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "justifyContent": "flex-start",
+        "alignItems": "flex-start",
+        "gap": "md",
+        "padding": "md"
+      },
+      "children": [
+        {
+          "node": "Card",
+          "id": "tile_samsung_tv_1",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "gap": "xs",
+            "backgroundColor": "#222222",
+            "borderRadius": "8px",
+            "padding": "sm",
+            "color": "#FFFFFF"
+          },
+          "children": [
+            {
+              "node": "Image",
+              "id": "img_tv",
+              "style": {
+                "alignSelf": "center",
+                "width": "60px",
+                "height": "40px"
+              }
+            },
+            {
+              "node": "Text",
+              "id": "label",
+              "text": "SamsungTV",
+              "style": {
+                "alignSelf": "center",
+                "fontSize": "14px",
+                "color": "#FFFFFF"
+              }
+            }
+          ]
+        },
+        {
+          "node": "Card",
+          "id": "tile_samsung_tv_2",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "gap": "xs",
+            "backgroundColor": "#222222",
+            "borderRadius": "8px",
+            "padding": "sm",
+            "color": "#FFFFFF"
+          },
+          "children": [
+            {
+              "node": "Image",
+              "id": "img_tv",
+              "style": {
+                "alignSelf": "center",
+                "width": "60px",
+                "height": "40px"
+              }
+            },
+            {
+              "node": "Text",
+              "id": "label",
+              "text": "SamsungTV",
+              "style": {
+                "alignSelf": "center",
+                "fontSize": "14px",
+                "color": "#FFFFFF"
+              }
+            }
+          ]
+        },
+        {
+          "node": "Card",
+          "id": "tile_acer_tv",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "justifyContent": "center",
+            "alignItems": "center",
+            "gap": "xs",
+            "backgroundColor": "#222222",
+            "borderRadius": "8px",
+            "padding": "sm",
+            "color": "#FFFFFF"
+          },
+          "children": [
+            {
+              "node": "Image",
+              "id": "img_tv",
+              "style": {
+                "alignSelf": "center",
+                "width": "60px",
+                "height": "40px"
+              }
+            },
+            {
+              "node": "Text",
+              "id": "label",
+              "text": "AcerTV",
+              "style": {
+                "alignSelf": "center",
+                "fontSize": "14px",
+                "color": "#FFFFFF"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "node": "Button",
+      "id": "btn_add_remote",
+      "text": "+",
+      "style": {
+        "position": "fixed",
+        "bottom": "16px",
+        "right": "16px",
+        "width": "56px",
+        "height": "56px",
+        "borderRadius": "28px",
+        "backgroundColor": "#00C853",
+        "color": "#FFFFFF",
+        "fontSize": "24px",
+        "justifyContent": "center",
+        "alignItems": "center"
+      }
+    }
+  ]
+}

@@ -1,0 +1,791 @@
+{
+  "id": "myntra_shopping_bag",
+  "type": "Screen",
+  "style": {
+    "display": "flex",
+    "flexDirection": "column",
+    "backgroundColor": "#F8F8F8",
+    "color": "#333333"
+  },
+  "children": [
+    {
+      "id": "header",
+      "type": "AppBar",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "padding": "16px",
+        "backgroundColor": "#FFFFFF"
+      },
+      "children": [
+        {
+          "id": "back_button_and_title",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": "16px"
+          },
+          "children": [
+            {
+              "id": "back_arrow",
+              "type": "Icon",
+              "style": {
+                "color": "#333333",
+                "fontSize": "24px"
+              }
+            },
+            {
+              "id": "page_title",
+              "type": "Text",
+              "text": "SHOPPING BAG",
+              "style": {
+                "fontSize": "18px",
+                "fontWeight": "bold",
+                "color": "#333333",
+                "letterSpacing": "1px"
+              }
+            }
+          ]
+        },
+        {
+          "id": "wishlist_icon",
+          "type": "Icon",
+          "style": {
+            "color": "#666666",
+            "fontSize": "24px"
+          }
+        }
+      ]
+    },
+    {
+      "id": "progress_bar",
+      "type": "Row",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "padding": "16px",
+        "backgroundColor": "#FFFFFF",
+        "borderBottom": "1px solid #E0E0E0"
+      },
+      "children": [
+        {
+          "id": "bag_step",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": "8px"
+          },
+          "children": [
+            {
+              "id": "bag_circle",
+              "type": "Badge",
+              "style": {
+                "width": "24px",
+                "height": "24px",
+                "borderRadius": "50%",
+                "backgroundColor": "#00CC99",
+                "border": "2px solid #00CC99"
+              }
+            },
+            {
+              "id": "bag_text",
+              "type": "Text",
+              "text": "Bag",
+              "style": {
+                "fontSize": "14px",
+                "color": "#00CC99",
+                "fontWeight": "500"
+              }
+            }
+          ]
+        },
+        {
+          "id": "progress_line_1",
+          "type": "Spacer",
+          "style": {
+            "flex": 1,
+            "height": "2px",
+            "backgroundColor": "#E0E0E0",
+            "margin": "0 16px"
+          }
+        },
+        {
+          "id": "address_step",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": "8px"
+          },
+          "children": [
+            {
+              "id": "address_circle",
+              "type": "Badge",
+              "style": {
+                "width": "20px",
+                "height": "20px",
+                "borderRadius": "50%",
+                "backgroundColor": "#E0E0E0"
+              }
+            },
+            {
+              "id": "address_text",
+              "type": "Text",
+              "text": "Address",
+              "style": {
+                "fontSize": "14px",
+                "color": "#CCCCCC"
+              }
+            }
+          ]
+        },
+        {
+          "id": "progress_line_2",
+          "type": "Spacer",
+          "style": {
+            "flex": 1,
+            "height": "2px",
+            "backgroundColor": "#E0E0E0",
+            "margin": "0 16px"
+          }
+        },
+        {
+          "id": "payment_step",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": "8px"
+          },
+          "children": [
+            {
+              "id": "payment_circle",
+              "type": "Badge",
+              "style": {
+                "width": "20px",
+                "height": "20px",
+                "borderRadius": "50%",
+                "backgroundColor": "#E0E0E0"
+              }
+            },
+            {
+              "id": "payment_text",
+              "type": "Text",
+              "text": "Payment",
+              "style": {
+                "fontSize": "14px",
+                "color": "#CCCCCC"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "delivery_section",
+      "type": "Card",
+      "style": {
+        "backgroundColor": "#F0F0F0",
+        "padding": "16px",
+        "margin": "8px 0",
+        "borderRadius": "8px"
+      },
+      "children": [
+        {
+          "id": "delivery_info",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "alignItems": "flex-start"
+          },
+          "children": [
+            {
+              "id": "delivery_details",
+              "type": "Column",
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "gap": "4px",
+                "flex": 1
+              },
+              "children": [
+                {
+                  "id": "deliver_to_text",
+                  "type": "Text",
+                  "text": "Deliver to: Suhas, 560078",
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "600",
+                    "color": "#333333"
+                  }
+                },
+                {
+                  "id": "address_details",
+                  "type": "Text",
+                  "text": "Shetty Pg, Opposite To Smart Point Beside Santosh B...",
+                  "style": {
+                    "fontSize": "14px",
+                    "color": "#666666"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "change_button",
+              "type": "Button",
+              "text": "Change",
+              "style": {
+                "backgroundColor": "transparent",
+                "color": "#FF3F6C",
+                "fontSize": "14px",
+                "fontWeight": "600",
+                "border": "none",
+                "textDecoration": "underline"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fwd_pass_section",
+      "type": "Card",
+      "style": {
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": "12px",
+        "padding": "16px",
+        "margin": "8px 0",
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "gap": "16px"
+      },
+      "children": [
+        {
+          "id": "fwd_pass_icon",
+          "type": "Image",
+          "style": {
+            "width": "80px",
+            "height": "60px",
+            "borderRadius": "8px",
+            "backgroundColor": "#FFDD00"
+          }
+        },
+        {
+          "id": "fwd_pass_content",
+          "type": "Column",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "8px",
+            "flex": 1
+          },
+          "children": [
+            {
+              "id": "fwd_pass_title",
+              "type": "Text",
+              "text": "fwd pass",
+              "style": {
+                "fontSize": "18px",
+                "fontWeight": "bold",
+                "color": "#333333"
+              }
+            },
+            {
+              "id": "fwd_pass_description",
+              "type": "Text",
+              "text": "Extra 10% off on every fwd order @ just ₹9",
+              "style": {
+                "fontSize": "14px",
+                "color": "#666666"
+              }
+            },
+            {
+              "id": "view_benefits_link",
+              "type": "Text",
+              "text": "View Benefits",
+              "style": {
+                "fontSize": "14px",
+                "color": "#FF3F6C",
+                "fontWeight": "600",
+                "textDecoration": "underline"
+              }
+            }
+          ]
+        },
+        {
+          "id": "add_to_bag_button",
+          "type": "Button",
+          "text": "ADD TO BAG",
+          "style": {
+            "backgroundColor": "transparent",
+            "color": "#FF3F6C",
+            "border": "2px solid #FF3F6C",
+            "borderRadius": "8px",
+            "padding": "12px 20px",
+            "fontSize": "14px",
+            "fontWeight": "600"
+          }
+        }
+      ]
+    },
+    {
+      "id": "savings_banner",
+      "type": "Card",
+      "style": {
+        "backgroundColor": "#E8F5E8",
+        "borderRadius": "8px",
+        "padding": "16px",
+        "margin": "8px 0",
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "gap": "12px"
+      },
+      "children": [
+        {
+          "id": "savings_icon",
+          "type": "Icon",
+          "style": {
+            "color": "#00CC99",
+            "fontSize": "24px"
+          }
+        },
+        {
+          "id": "savings_text",
+          "type": "Text",
+          "text": "You're saving ₹852 on this order",
+          "style": {
+            "fontSize": "16px",
+            "fontWeight": "600",
+            "color": "#333333"
+          }
+        }
+      ]
+    },
+    {
+      "id": "price_change_alert",
+      "type": "Card",
+      "style": {
+        "backgroundColor": "#FFF8E1",
+        "borderRadius": "8px",
+        "padding": "16px",
+        "margin": "8px 0",
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "gap": "12px"
+      },
+      "children": [
+        {
+          "id": "price_change_icon",
+          "type": "Icon",
+          "style": {
+            "color": "#FF9800",
+            "fontSize": "20px"
+          }
+        },
+        {
+          "id": "price_change_text",
+          "type": "Text",
+          "text": "The price of some item(s) might have changed.",
+          "style": {
+            "fontSize": "14px",
+            "color": "#666666"
+          }
+        }
+      ]
+    },
+    {
+      "id": "items_summary",
+      "type": "Card",
+      "style": {
+        "backgroundColor": "#FFFFFF",
+        "padding": "16px",
+        "margin": "8px 0",
+        "borderRadius": "8px",
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "justifyContent": "space-between"
+      },
+      "children": [
+        {
+          "id": "items_info",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": "12px"
+          },
+          "children": [
+            {
+              "id": "checkbox_selected",
+              "type": "Icon",
+              "style": {
+                "color": "#FF3F6C",
+                "fontSize": "20px"
+              }
+            },
+            {
+              "id": "items_text",
+              "type": "Text",
+              "text": "3/3 ITEMS SELECTED (₹6,766)",
+              "style": {
+                "fontSize": "16px",
+                "fontWeight": "600",
+                "color": "#333333"
+              }
+            }
+          ]
+        },
+        {
+          "id": "action_buttons",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "gap": "16px"
+          },
+          "children": [
+            {
+              "id": "share_button",
+              "type": "Icon",
+              "style": {
+                "color": "#666666",
+                "fontSize": "24px"
+              }
+            },
+            {
+              "id": "delete_button",
+              "type": "Icon",
+              "style": {
+                "color": "#666666",
+                "fontSize": "24px"
+              }
+            },
+            {
+              "id": "move_to_wishlist_button",
+              "type": "Icon",
+              "style": {
+                "color": "#666666",
+                "fontSize": "24px"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "product_item",
+      "type": "Card",
+      "style": {
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": "12px",
+        "padding": "16px",
+        "margin": "8px 0",
+        "position": "relative"
+      },
+      "children": [
+        {
+          "id": "product_checkbox",
+          "type": "Icon",
+          "style": {
+            "position": "absolute",
+            "top": "16px",
+            "left": "16px",
+            "color": "#FF3F6C",
+            "fontSize": "20px"
+          }
+        },
+        {
+          "id": "close_button",
+          "type": "Icon",
+          "style": {
+            "position": "absolute",
+            "top": "16px",
+            "right": "16px",
+            "color": "#666666",
+            "fontSize": "20px"
+          }
+        },
+        {
+          "id": "product_content",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "gap": "16px",
+            "marginTop": "40px"
+          },
+          "children": [
+            {
+              "id": "product_image",
+              "type": "Image",
+              "style": {
+                "width": "120px",
+                "height": "150px",
+                "borderRadius": "8px",
+                "backgroundColor": "#F0F0F0"
+              }
+            },
+            {
+              "id": "product_details",
+              "type": "Column",
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "gap": "8px",
+                "flex": 1
+              },
+              "children": [
+                {
+                  "id": "brand_name",
+                  "type": "Text",
+                  "text": "Mast & Harbour",
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "600",
+                    "color": "#333333"
+                  }
+                },
+                {
+                  "id": "product_name",
+                  "type": "Text",
+                  "text": "Men Citron Eau De Parfum 100 ml",
+                  "style": {
+                    "fontSize": "14px",
+                    "color": "#666666"
+                  }
+                },
+                {
+                  "id": "seller_info",
+                  "type": "Text",
+                  "text": "Sold by: 3003BC LIFEST...",
+                  "style": {
+                    "fontSize": "12px",
+                    "color": "#999999"
+                  }
+                },
+                {
+                  "id": "product_options",
+                  "type": "Row",
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "gap": "16px",
+                    "marginTop": "12px"
+                  },
+                  "children": [
+                    {
+                      "id": "size_selector",
+                      "type": "Button",
+                      "text": "Size: 75-100 ML",
+                      "style": {
+                        "backgroundColor": "transparent",
+                        "border": "1px solid #CCCCCC",
+                        "borderRadius": "4px",
+                        "padding": "8px 12px",
+                        "fontSize": "14px",
+                        "color": "#333333"
+                      }
+                    },
+                    {
+                      "id": "quantity_selector",
+                      "type": "Button",
+                      "text": "Qty: 1",
+                      "style": {
+                        "backgroundColor": "transparent",
+                        "border": "1px solid #CCCCCC",
+                        "borderRadius": "4px",
+                        "padding": "8px 12px",
+                        "fontSize": "14px",
+                        "color": "#333333"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "price_section",
+                  "type": "Row",
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "alignItems": "center",
+                    "gap": "8px",
+                    "marginTop": "12px"
+                  },
+                  "children": [
+                    {
+                      "id": "current_price",
+                      "type": "Text",
+                      "text": "₹347",
+                      "style": {
+                        "fontSize": "18px",
+                        "fontWeight": "bold",
+                        "color": "#333333"
+                      }
+                    },
+                    {
+                      "id": "original_price",
+                      "type": "Text",
+                      "text": "₹1,199",
+                      "style": {
+                        "fontSize": "14px",
+                        "color": "#999999",
+                        "textDecoration": "line-through"
+                      }
+                    },
+                    {
+                      "id": "discount_percentage",
+                      "type": "Text",
+                      "text": "71% OFF",
+                      "style": {
+                        "fontSize": "14px",
+                        "color": "#FF3F6C",
+                        "fontWeight": "600"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "special_deals_banner",
+      "type": "Card",
+      "style": {
+        "backgroundColor": "#1A1A2E",
+        "borderRadius": "12px",
+        "padding": "16px",
+        "margin": "8px 0",
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "justifyContent": "space-between"
+      },
+      "children": [
+        {
+          "id": "deals_content",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": "16px"
+          },
+          "children": [
+            {
+              "id": "deals_icon",
+              "type": "Image",
+              "style": {
+                "width": "40px",
+                "height": "40px",
+                "borderRadius": "8px",
+                "backgroundColor": "#4169E1"
+              }
+            },
+            {
+              "id": "deals_text_content",
+              "type": "Column",
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "gap": "4px"
+              },
+              "children": [
+                {
+                  "id": "deals_title",
+                  "type": "Text",
+                  "text": "Special Price Deals unlocked*",
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "600",
+                    "color": "#00FF88"
+                  }
+                },
+                {
+                  "id": "deals_subtitle",
+                  "type": "Text",
+                  "text": "*Add any 1 item at special price.",
+                  "style": {
+                    "fontSize": "12px",
+                    "color": "#CCCCCC"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "check_deal_button",
+          "type": "Button",
+          "text": "Check Deal",
+          "style": {
+            "backgroundColor": "#FF3F6C",
+            "color": "#FFFFFF",
+            "borderRadius": "8px",
+            "padding": "12px 20px",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "border": "none"
+          }
+        }
+      ]
+    },
+    {
+      "id": "order_summary",
+      "type": "Card",
+      "style": {
+        "backgroundColor": "#FFFFFF",
+        "padding": "16px",
+        "margin": "8px 0",
+        "borderRadius": "8px"
+      },
+      "children": [
+        {
+          "id": "order_summary_text",
+          "type": "Text",
+          "text": "3 Items selected for order",
+          "style": {
+            "fontSize": "16px",
+            "fontWeight": "600",
+            "color": "#333333",
+            "textAlign": "center"
+          }
+        }
+      ]
+    },
+    {
+      "id": "place_order_button",
+      "type": "Button",
+      "text": "PLACE ORDER",
+      "style": {
+        "backgroundColor": "#FF3F6C",
+        "color": "#FFFFFF",
+        "borderRadius": "8px",
+        "padding": "16px",
+        "fontSize": "18px",
+        "fontWeight": "bold",
+        "border": "none",
+        "margin": "16px",
+        "letterSpacing": "1px"
+      }
+    }
+  ]
+}

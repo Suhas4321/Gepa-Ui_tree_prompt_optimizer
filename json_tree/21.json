@@ -1,0 +1,626 @@
+{
+  "id": "instagram_settings",
+  "type": "Screen",
+  "style": {
+    "display": "flex",
+    "flexDirection": "column",
+    "backgroundColor": "#000000",
+    "color": "#FFFFFF"
+  },
+  "children": [
+    {
+      "id": "header",
+      "type": "AppBar",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "padding": "16px",
+        "backgroundColor": "#000000",
+        "gap": "16px"
+      },
+      "children": [
+        {
+          "id": "back_arrow",
+          "type": "Icon",
+          "style": {
+            "color": "#FFFFFF",
+            "fontSize": "24px"
+          }
+        },
+        {
+          "id": "page_title",
+          "type": "Text",
+          "text": "Settings and activity",
+          "style": {
+            "fontSize": "20px",
+            "fontWeight": "600",
+            "color": "#FFFFFF"
+          }
+        }
+      ]
+    },
+    {
+      "id": "search_bar",
+      "type": "SearchBar",
+      "style": {
+        "backgroundColor": "#262626",
+        "borderRadius": "12px",
+        "padding": "12px 16px",
+        "margin": "16px",
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "gap": "12px"
+      },
+      "children": [
+        {
+          "id": "search_icon",
+          "type": "Icon",
+          "style": {
+            "color": "#8E8E8E",
+            "fontSize": "20px"
+          }
+        },
+        {
+          "id": "search_placeholder",
+          "type": "Text",
+          "text": "Search",
+          "style": {
+            "fontSize": "16px",
+            "color": "#8E8E8E"
+          }
+        }
+      ]
+    },
+    {
+      "id": "account_section",
+      "type": "Column",
+      "style": {
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": "0 16px",
+        "gap": "24px"
+      },
+      "children": [
+        {
+          "id": "your_account_header",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "alignItems": "center"
+          },
+          "children": [
+            {
+              "id": "your_account_text",
+              "type": "Text",
+              "text": "Your account",
+              "style": {
+                "fontSize": "16px",
+                "color": "#8E8E8E"
+              }
+            },
+            {
+              "id": "meta_logo",
+              "type": "Text",
+              "text": "Meta",
+              "style": {
+                "fontSize": "16px",
+                "fontWeight": "600",
+                "color": "#FFFFFF"
+              }
+            }
+          ]
+        },
+        {
+          "id": "accounts_center",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "justifyContent": "space-between",
+            "paddingBottom": "16px"
+          },
+          "children": [
+            {
+              "id": "accounts_center_content",
+              "type": "Row",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "gap": "16px",
+                "flex": 1
+              },
+              "children": [
+                {
+                  "id": "accounts_center_icon",
+                  "type": "Icon",
+                  "style": {
+                    "color": "#FFFFFF",
+                    "fontSize": "24px"
+                  }
+                },
+                {
+                  "id": "accounts_center_info",
+                  "type": "Column",
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "gap": "4px"
+                  },
+                  "children": [
+                    {
+                      "id": "accounts_center_title",
+                      "type": "Text",
+                      "text": "Accounts Center",
+                      "style": {
+                        "fontSize": "16px",
+                        "fontWeight": "500",
+                        "color": "#FFFFFF"
+                      }
+                    },
+                    {
+                      "id": "accounts_center_description",
+                      "type": "Text",
+                      "text": "Password, security, personal details, ad preferences",
+                      "style": {
+                        "fontSize": "14px",
+                        "color": "#8E8E8E"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "accounts_center_arrow",
+              "type": "Icon",
+              "style": {
+                "color": "#8E8E8E",
+                "fontSize": "20px"
+              }
+            }
+          ]
+        },
+        {
+          "id": "accounts_center_description_extended",
+          "type": "Text",
+          "text": "Manage your connected experiences and account settings across Meta technologies. Learn more",
+          "style": {
+            "fontSize": "14px",
+            "color": "#8E8E8E",
+            "lineHeight": "1.4",
+            "paddingBottom": "24px"
+          }
+        },
+        {
+          "id": "how_you_use_instagram_section",
+          "type": "Column",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "24px"
+          },
+          "children": [
+            {
+              "id": "how_you_use_instagram_header",
+              "type": "Text",
+              "text": "How you use Instagram",
+              "style": {
+                "fontSize": "16px",
+                "color": "#8E8E8E"
+              }
+            },
+            {
+              "id": "saved_option",
+              "type": "Row",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "justifyContent": "space-between"
+              },
+              "children": [
+                {
+                  "id": "saved_content",
+                  "type": "Row",
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "alignItems": "center",
+                    "gap": "16px"
+                  },
+                  "children": [
+                    {
+                      "id": "saved_icon",
+                      "type": "Icon",
+                      "style": {
+                        "color": "#FFFFFF",
+                        "fontSize": "24px"
+                      }
+                    },
+                    {
+                      "id": "saved_text",
+                      "type": "Text",
+                      "text": "Saved",
+                      "style": {
+                        "fontSize": "16px",
+                        "fontWeight": "500",
+                        "color": "#FFFFFF"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "saved_arrow",
+                  "type": "Icon",
+                  "style": {
+                    "color": "#8E8E8E",
+                    "fontSize": "20px"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "archive_option",
+              "type": "Row",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "justifyContent": "space-between"
+              },
+              "children": [
+                {
+                  "id": "archive_content",
+                  "type": "Row",
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "alignItems": "center",
+                    "gap": "16px"
+                  },
+                  "children": [
+                    {
+                      "id": "archive_icon",
+                      "type": "Icon",
+                      "style": {
+                        "color": "#FFFFFF",
+                        "fontSize": "24px"
+                      }
+                    },
+                    {
+                      "id": "archive_text",
+                      "type": "Text",
+                      "text": "Archive",
+                      "style": {
+                        "fontSize": "16px",
+                        "fontWeight": "500",
+                        "color": "#FFFFFF"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "archive_arrow",
+                  "type": "Icon",
+                  "style": {
+                    "color": "#8E8E8E",
+                    "fontSize": "20px"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "activity_option",
+              "type": "Row",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "justifyContent": "space-between"
+              },
+              "children": [
+                {
+                  "id": "activity_content",
+                  "type": "Row",
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "alignItems": "center",
+                    "gap": "16px"
+                  },
+                  "children": [
+                    {
+                      "id": "activity_icon",
+                      "type": "Icon",
+                      "style": {
+                        "color": "#FFFFFF",
+                        "fontSize": "24px"
+                      }
+                    },
+                    {
+                      "id": "activity_text",
+                      "type": "Text",
+                      "text": "Your activity",
+                      "style": {
+                        "fontSize": "16px",
+                        "fontWeight": "500",
+                        "color": "#FFFFFF"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "activity_arrow",
+                  "type": "Icon",
+                  "style": {
+                    "color": "#8E8E8E",
+                    "fontSize": "20px"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "notifications_option",
+              "type": "Row",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "justifyContent": "space-between"
+              },
+              "children": [
+                {
+                  "id": "notifications_content",
+                  "type": "Row",
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "alignItems": "center",
+                    "gap": "16px"
+                  },
+                  "children": [
+                    {
+                      "id": "notifications_icon",
+                      "type": "Icon",
+                      "style": {
+                        "color": "#FFFFFF",
+                        "fontSize": "24px"
+                      }
+                    },
+                    {
+                      "id": "notifications_text",
+                      "type": "Text",
+                      "text": "Notifications",
+                      "style": {
+                        "fontSize": "16px",
+                        "fontWeight": "500",
+                        "color": "#FFFFFF"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "notifications_arrow",
+                  "type": "Icon",
+                  "style": {
+                    "color": "#8E8E8E",
+                    "fontSize": "20px"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "time_management_option",
+              "type": "Row",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "justifyContent": "space-between"
+              },
+              "children": [
+                {
+                  "id": "time_management_content",
+                  "type": "Row",
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "alignItems": "center",
+                    "gap": "16px"
+                  },
+                  "children": [
+                    {
+                      "id": "time_management_icon",
+                      "type": "Icon",
+                      "style": {
+                        "color": "#FFFFFF",
+                        "fontSize": "24px"
+                      }
+                    },
+                    {
+                      "id": "time_management_text",
+                      "type": "Text",
+                      "text": "Time management",
+                      "style": {
+                        "fontSize": "16px",
+                        "fontWeight": "500",
+                        "color": "#FFFFFF"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "time_management_arrow",
+                  "type": "Icon",
+                  "style": {
+                    "color": "#8E8E8E",
+                    "fontSize": "20px"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "privacy_section",
+          "type": "Column",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "gap": "24px",
+            "paddingTop": "24px"
+          },
+          "children": [
+            {
+              "id": "privacy_header",
+              "type": "Text",
+              "text": "Who can see your content",
+              "style": {
+                "fontSize": "16px",
+                "color": "#8E8E8E"
+              }
+            },
+            {
+              "id": "account_privacy_option",
+              "type": "Row",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "alignItems": "center",
+                "justifyContent": "space-between"
+              },
+              "children": [
+                {
+                  "id": "account_privacy_content",
+                  "type": "Row",
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "alignItems": "center",
+                    "gap": "16px"
+                  },
+                  "children": [
+                    {
+                      "id": "privacy_icon",
+                      "type": "Icon",
+                      "style": {
+                        "color": "#FFFFFF",
+                        "fontSize": "24px"
+                      }
+                    },
+                    {
+                      "id": "privacy_text",
+                      "type": "Text",
+                      "text": "Account privacy",
+                      "style": {
+                        "fontSize": "16px",
+                        "fontWeight": "500",
+                        "color": "#FFFFFF"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "privacy_status_and_arrow",
+                  "type": "Row",
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "alignItems": "center",
+                    "gap": "8px"
+                  },
+                  "children": [
+                    {
+                      "id": "privacy_status",
+                      "type": "Text",
+                      "text": "Private",
+                      "style": {
+                        "fontSize": "14px",
+                        "color": "#8E8E8E"
+                      }
+                    },
+                    {
+                      "id": "privacy_arrow",
+                      "type": "Icon",
+                      "style": {
+                        "color": "#8E8E8E",
+                        "fontSize": "20px"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bottom_navigation",
+      "type": "BottomNav",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+        "alignItems": "center",
+        "padding": "12px 0",
+        "backgroundColor": "#000000",
+        "borderTop": "1px solid #262626",
+        "position": "fixed",
+        "bottom": "0",
+        "width": "100%"
+      },
+      "children": [
+        {
+          "id": "nav_home",
+          "type": "Icon",
+          "style": {
+            "color": "#FFFFFF",
+            "fontSize": "28px"
+          }
+        },
+        {
+          "id": "nav_search",
+          "type": "Icon",
+          "style": {
+            "color": "#8E8E8E",
+            "fontSize": "28px"
+          }
+        },
+        {
+          "id": "nav_create",
+          "type": "Icon",
+          "style": {
+            "color": "#8E8E8E",
+            "fontSize": "28px"
+          }
+        },
+        {
+          "id": "nav_reels",
+          "type": "Icon",
+          "style": {
+            "color": "#8E8E8E",
+            "fontSize": "28px"
+          }
+        },
+        {
+          "id": "nav_profile",
+          "type": "Avatar",
+          "style": {
+            "width": "28px",
+            "height": "28px",
+            "borderRadius": "50%",
+            "backgroundColor": "#8E8E8E",
+            "border": "1px solid #8E8E8E"
+          }
+        }
+      ]
+    }
+  ]
+}

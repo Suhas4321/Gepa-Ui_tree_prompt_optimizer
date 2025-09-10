@@ -1,0 +1,528 @@
+{
+  "id": "chess_profile_screen",
+  "type": "Screen",
+  "style": {
+    "display": "flex",
+    "flexDirection": "column",
+    "backgroundColor": "#2C2C2C"
+  },
+  "children": [
+    {
+      "id": "app_header",
+      "type": "AppBar",
+      "style": {
+        "display": "flex",
+        "justifyContent": "center",
+        "alignItems": "center",
+        "backgroundColor": "#2C2C2C",
+        "paddingTop": 16,
+        "paddingBottom": 16
+      },
+      "children": [
+        {
+          "id": "chess_logo",
+          "type": "Image",
+          "text": "Chess.com",
+          "style": {
+            "color": "#FFFFFF"
+          }
+        }
+      ]
+    },
+    {
+      "id": "premium_banner",
+      "type": "Banner",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "backgroundColor": "#1FA5DB",
+        "borderRadius": 12,
+        "margin": 16,
+        "padding": 16,
+        "alignItems": "center",
+        "gap": 12
+      },
+      "children": [
+        {
+          "id": "diamond_icon",
+          "type": "Icon",
+          "style": {
+            "color": "#FFFFFF"
+          }
+        },
+        {
+          "id": "premium_content",
+          "type": "Column",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column"
+          },
+          "children": [
+            {
+              "id": "premium_title",
+              "type": "Text",
+              "text": "Try Premium",
+              "style": {
+                "color": "#FFFFFF",
+                "fontWeight": "bold",
+                "fontSize": 18
+              }
+            },
+            {
+              "id": "premium_subtitle",
+              "type": "Text",
+              "text": "Play your best chess!",
+              "style": {
+                "color": "#FFFFFF",
+                "fontSize": 14
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "menu_list",
+      "type": "Column",
+      "style": {
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": 16
+      },
+      "children": [
+        {
+          "id": "stats_item",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": 16,
+            "paddingVertical": 16
+          },
+          "children": [
+            {
+              "id": "stats_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#1FA5DB"
+              }
+            },
+            {
+              "id": "stats_text",
+              "type": "Text",
+              "text": "Stats",
+              "style": {
+                "color": "#FFFFFF",
+                "fontSize": 16
+              }
+            }
+          ]
+        },
+        {
+          "id": "profile_item",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": 16,
+            "paddingVertical": 16
+          },
+          "children": [
+            {
+              "id": "profile_icon",
+              "type": "Avatar",
+              "style": {
+                "backgroundColor": "#6B8DB5",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "id": "profile_text",
+              "type": "Text",
+              "text": "Profile",
+              "style": {
+                "color": "#FFFFFF",
+                "fontSize": 16
+              }
+            }
+          ]
+        },
+        {
+          "id": "theme_item",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": 16,
+            "paddingVertical": 16
+          },
+          "children": [
+            {
+              "id": "theme_icon",
+              "type": "Icon",
+              "style": {
+                "backgroundColor": "#87CEEB",
+                "color": "#4A4A4A"
+              }
+            },
+            {
+              "id": "theme_text",
+              "type": "Text",
+              "text": "Theme",
+              "style": {
+                "color": "#FFFFFF",
+                "fontSize": 16
+              }
+            }
+          ]
+        },
+        {
+          "id": "awards_item",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": 16,
+            "paddingVertical": 16
+          },
+          "children": [
+            {
+              "id": "awards_icon",
+              "type": "Icon",
+              "style": {
+                "backgroundColor": "#FFD700",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "id": "awards_text",
+              "type": "Text",
+              "text": "Awards",
+              "style": {
+                "color": "#FFFFFF",
+                "fontSize": 16
+              }
+            }
+          ]
+        },
+        {
+          "id": "friends_item",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": 16,
+            "paddingVertical": 16
+          },
+          "children": [
+            {
+              "id": "friends_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#1FA5DB"
+              }
+            },
+            {
+              "id": "friends_text",
+              "type": "Text",
+              "text": "Friends",
+              "style": {
+                "color": "#FFFFFF",
+                "fontSize": 16
+              }
+            }
+          ]
+        },
+        {
+          "id": "messages_item",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": 16,
+            "paddingVertical": 16
+          },
+          "children": [
+            {
+              "id": "messages_icon",
+              "type": "Icon",
+              "style": {
+                "backgroundColor": "#87CEEB",
+                "color": "#4A4A4A"
+              }
+            },
+            {
+              "id": "messages_text",
+              "type": "Text",
+              "text": "Messages",
+              "style": {
+                "color": "#FFFFFF",
+                "fontSize": 16
+              }
+            },
+            {
+              "id": "messages_badge",
+              "type": "Badge",
+              "text": "1",
+              "style": {
+                "backgroundColor": "#FF4444",
+                "color": "#FFFFFF",
+                "borderRadius": 50,
+                "fontSize": 12
+              }
+            }
+          ]
+        },
+        {
+          "id": "settings_item",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": 16,
+            "paddingVertical": 16
+          },
+          "children": [
+            {
+              "id": "settings_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#888888"
+              }
+            },
+            {
+              "id": "settings_text",
+              "type": "Text",
+              "text": "Settings",
+              "style": {
+                "color": "#FFFFFF",
+                "fontSize": 16
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "learn_section",
+      "type": "Column",
+      "style": {
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": 16
+      },
+      "children": [
+        {
+          "id": "learn_header",
+          "type": "Text",
+          "text": "Learn",
+          "style": {
+            "color": "#888888",
+            "fontSize": 16,
+            "marginBottom": 16
+          }
+        },
+        {
+          "id": "analysis_item",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": 16,
+            "paddingVertical": 16
+          },
+          "children": [
+            {
+              "id": "analysis_icon",
+              "type": "Icon",
+              "style": {
+                "backgroundColor": "#6B8DB5",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "id": "analysis_text",
+              "type": "Text",
+              "text": "Analysis",
+              "style": {
+                "color": "#FFFFFF",
+                "fontSize": 16
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bottom_nav",
+      "type": "BottomNav",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+        "alignItems": "center",
+        "backgroundColor": "#2C2C2C",
+        "paddingVertical": 12
+      },
+      "children": [
+        {
+          "id": "nav_home",
+          "type": "Tab",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center"
+          },
+          "children": [
+            {
+              "id": "home_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#888888"
+              }
+            },
+            {
+              "id": "home_text",
+              "type": "Text",
+              "text": "Home",
+              "style": {
+                "color": "#888888",
+                "fontSize": 12
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_puzzles",
+          "type": "Tab",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center"
+          },
+          "children": [
+            {
+              "id": "puzzles_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#888888"
+              }
+            },
+            {
+              "id": "puzzles_text",
+              "type": "Text",
+              "text": "Puzzles",
+              "style": {
+                "color": "#888888",
+                "fontSize": 12
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_learn",
+          "type": "Tab",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center"
+          },
+          "children": [
+            {
+              "id": "learn_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#888888"
+              }
+            },
+            {
+              "id": "learn_nav_text",
+              "type": "Text",
+              "text": "Learn",
+              "style": {
+                "color": "#888888",
+                "fontSize": 12
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_watch",
+          "type": "Tab",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center"
+          },
+          "children": [
+            {
+              "id": "watch_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#888888"
+              }
+            },
+            {
+              "id": "watch_text",
+              "type": "Text",
+              "text": "Watch",
+              "style": {
+                "color": "#888888",
+                "fontSize": 12
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_more",
+          "type": "Tab",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center"
+          },
+          "children": [
+            {
+              "id": "more_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "id": "more_text",
+              "type": "Text",
+              "text": "More",
+              "style": {
+                "color": "#FFFFFF",
+                "fontSize": 12
+              }
+            },
+            {
+              "id": "more_badge",
+              "type": "Badge",
+              "text": "1",
+              "style": {
+                "backgroundColor": "#FF4444",
+                "color": "#FFFFFF",
+                "borderRadius": 50,
+                "fontSize": 10,
+                "position": "absolute",
+                "top": -5,
+                "right": -5
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

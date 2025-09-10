@@ -1,0 +1,578 @@
+{
+  "id": "swiggy_home",
+  "type": "Screen",
+  "style": {
+    "display": "flex",
+    "flexDirection": "column",
+    "backgroundColor": "#FFFFFF"
+  },
+  "children": [
+    {
+      "id": "app_bar",
+      "type": "AppBar",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "backgroundColor": "#8B2F7D",
+        "padding": "16px"
+      },
+      "children": [
+        {
+          "id": "location_section",
+          "type": "Column",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "flex-start"
+          },
+          "children": [
+            {
+              "id": "new_home_text",
+              "type": "Text",
+              "text": "New Home",
+              "style": {
+                "fontSize": "18px",
+                "fontWeight": "bold",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "id": "address_text",
+              "type": "Text",
+              "text": "46, Shivani Sunshine, Near Ananda Honda, ...",
+              "style": {
+                "fontSize": "14px",
+                "color": "#E0C2E6"
+              }
+            }
+          ]
+        },
+        {
+          "id": "right_section",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": "12px"
+          },
+          "children": [
+            {
+              "id": "one_blck_badge",
+              "type": "Badge",
+              "text": "one BLCK",
+              "style": {
+                "backgroundColor": "#4A2545",
+                "borderRadius": "20px",
+                "padding": "8px 12px",
+                "color": "#FFFFFF",
+                "fontSize": "12px"
+              }
+            },
+            {
+              "id": "profile_avatar",
+              "type": "Avatar",
+              "style": {
+                "width": "32px",
+                "height": "32px",
+                "borderRadius": "16px",
+                "backgroundColor": "#6B4C67",
+                "color": "#FFFFFF"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "search_container",
+      "type": "SearchBar",
+      "style": {
+        "margin": "16px",
+        "backgroundColor": "#FFFFFF",
+        "borderRadius": "12px",
+        "elevation": "2px"
+      },
+      "children": [
+        {
+          "id": "search_input",
+          "type": "Text",
+          "text": "Search for 'Paneer'",
+          "style": {
+            "padding": "16px",
+            "fontSize": "16px",
+            "color": "#888888"
+          }
+        },
+        {
+          "id": "mic_icon",
+          "type": "Icon",
+          "style": {
+            "position": "absolute",
+            "right": "16px",
+            "color": "#FF6B35"
+          }
+        }
+      ]
+    },
+    {
+      "id": "toy_town_banner",
+      "type": "Banner",
+      "style": {
+        "margin": "0 16px 16px",
+        "backgroundColor": "#F8F4FF",
+        "borderRadius": "16px",
+        "padding": "24px",
+        "position": "relative"
+      },
+      "children": [
+        {
+          "id": "banner_title",
+          "type": "Text",
+          "text": "TOY TOWN CARNIVAL",
+          "style": {
+            "fontSize": "24px",
+            "fontWeight": "bold",
+            "color": "#6B46C1",
+            "textAlign": "center"
+          }
+        },
+        {
+          "id": "shop_button",
+          "type": "Button",
+          "text": "Shop On Instamart",
+          "style": {
+            "backgroundColor": "#007BFF",
+            "color": "#FFFFFF",
+            "borderRadius": "20px",
+            "padding": "12px 24px",
+            "marginTop": "12px"
+          }
+        },
+        {
+          "id": "treasure_chest",
+          "type": "Image",
+          "style": {
+            "position": "absolute",
+            "left": "16px",
+            "top": "16px",
+            "color": "#8B5A2B"
+          }
+        },
+        {
+          "id": "diamonds_right",
+          "type": "Image",
+          "style": {
+            "position": "absolute",
+            "right": "16px",
+            "top": "16px",
+            "color": "#4FC3F7"
+          }
+        }
+      ]
+    },
+    {
+      "id": "services_grid",
+      "type": "Grid",
+      "style": {
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": "16px",
+        "margin": "0 16px"
+      },
+      "children": [
+        {
+          "id": "top_row",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "gap": "16px"
+          },
+          "children": [
+            {
+              "id": "food_delivery_card",
+              "type": "Card",
+              "style": {
+                "flex": "1",
+                "backgroundColor": "#FFFFFF",
+                "borderRadius": "16px",
+                "padding": "16px",
+                "elevation": "2px"
+              },
+              "children": [
+                {
+                  "id": "food_title",
+                  "type": "Text",
+                  "text": "FOOD DELIVERY",
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "bold",
+                    "color": "#333333"
+                  }
+                },
+                {
+                  "id": "food_subtitle",
+                  "type": "Text",
+                  "text": "FLAVOURFUL FESTIVAL",
+                  "style": {
+                    "fontSize": "12px",
+                    "color": "#888888",
+                    "marginTop": "4px"
+                  }
+                },
+                {
+                  "id": "food_offer",
+                  "type": "Chip",
+                  "text": "BUY 1 GET 1 & MORE",
+                  "style": {
+                    "backgroundColor": "#FFF3E0",
+                    "color": "#FF6600",
+                    "fontSize": "10px",
+                    "marginTop": "8px"
+                  }
+                },
+                {
+                  "id": "burger_image",
+                  "type": "Image",
+                  "style": {
+                    "width": "80px",
+                    "height": "60px",
+                    "marginTop": "12px",
+                    "color": "#D2691E"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "instamart_card",
+              "type": "Card",
+              "style": {
+                "flex": "1",
+                "backgroundColor": "#FFFFFF",
+                "borderRadius": "16px",
+                "padding": "16px",
+                "elevation": "2px"
+              },
+              "children": [
+                {
+                  "id": "instamart_title",
+                  "type": "Text",
+                  "text": "INSTAMART",
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "bold",
+                    "color": "#333333"
+                  }
+                },
+                {
+                  "id": "instamart_subtitle",
+                  "type": "Text",
+                  "text": "GET ANYTHING INSTANTLY",
+                  "style": {
+                    "fontSize": "12px",
+                    "color": "#888888",
+                    "marginTop": "4px"
+                  }
+                },
+                {
+                  "id": "instamart_offer",
+                  "type": "Chip",
+                  "text": "UP TO ₹100 OFF",
+                  "style": {
+                    "backgroundColor": "#FFF3E0",
+                    "color": "#FF6600",
+                    "fontSize": "10px",
+                    "marginTop": "8px"
+                  }
+                },
+                {
+                  "id": "delivery_time",
+                  "type": "Chip",
+                  "text": "9 mins",
+                  "style": {
+                    "backgroundColor": "#FFF3E0",
+                    "color": "#FF6600",
+                    "fontSize": "10px",
+                    "borderRadius": "12px",
+                    "marginTop": "8px"
+                  }
+                },
+                {
+                  "id": "teddy_image",
+                  "type": "Image",
+                  "style": {
+                    "width": "60px",
+                    "height": "60px",
+                    "marginTop": "8px",
+                    "color": "#8B4513"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bottom_row",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "gap": "16px"
+          },
+          "children": [
+            {
+              "id": "dineout_card",
+              "type": "Card",
+              "style": {
+                "flex": "1",
+                "backgroundColor": "#FFFFFF",
+                "borderRadius": "16px",
+                "padding": "16px",
+                "elevation": "2px"
+              },
+              "children": [
+                {
+                  "id": "dineout_title",
+                  "type": "Text",
+                  "text": "DINEOUT",
+                  "style": {
+                    "fontSize": "16px",
+                    "fontWeight": "bold",
+                    "color": "#333333"
+                  }
+                },
+                {
+                  "id": "dineout_subtitle",
+                  "type": "Text",
+                  "text": "EAT OUT & SAVE MORE",
+                  "style": {
+                    "fontSize": "12px",
+                    "color": "#888888",
+                    "marginTop": "4px"
+                  }
+                },
+                {
+                  "id": "dineout_offer",
+                  "type": "Chip",
+                  "text": "UP TO 50% OFF",
+                  "style": {
+                    "backgroundColor": "#FFF3E0",
+                    "color": "#FF6600",
+                    "fontSize": "10px",
+                    "marginTop": "8px"
+                  }
+                },
+                {
+                  "id": "plate_image",
+                  "type": "Image",
+                  "style": {
+                    "width": "60px",
+                    "height": "60px",
+                    "marginTop": "12px",
+                    "color": "#4FC3F7"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "scenes_card",
+              "type": "Card",
+              "style": {
+                "flex": "1",
+                "backgroundColor": "#FFFFFF",
+                "borderRadius": "16px",
+                "padding": "16px",
+                "elevation": "2px"
+              },
+              "children": [
+                {
+                  "id": "scenes_header",
+                  "type": "Row",
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "alignItems": "center",
+                    "gap": "8px"
+                  },
+                  "children": [
+                    {
+                      "id": "scenes_title",
+                      "type": "Text",
+                      "text": "SCENES",
+                      "style": {
+                        "fontSize": "16px",
+                        "fontWeight": "bold",
+                        "color": "#333333"
+                      }
+                    },
+                    {
+                      "id": "new_badge",
+                      "type": "Badge",
+                      "text": "NEW",
+                      "style": {
+                        "backgroundColor": "#FF4757",
+                        "color": "#FFFFFF",
+                        "fontSize": "8px",
+                        "borderRadius": "4px",
+                        "padding": "2px 6px"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "scenes_subtitle",
+                  "type": "Text",
+                  "text": "DISCOVER EVENTS NEARBY",
+                  "style": {
+                    "fontSize": "12px",
+                    "color": "#888888",
+                    "marginTop": "4px"
+                  }
+                },
+                {
+                  "id": "music_image",
+                  "type": "Image",
+                  "style": {
+                    "width": "80px",
+                    "height": "60px",
+                    "marginTop": "12px",
+                    "color": "#8B4513"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "credit_card_banner",
+      "type": "Banner",
+      "style": {
+        "margin": "16px",
+        "backgroundColor": "#FFF3E0",
+        "borderRadius": "16px",
+        "padding": "16px",
+        "border": "2px solid #FFB74D"
+      },
+      "children": [
+        {
+          "id": "credit_title",
+          "type": "Text",
+          "text": "CREDIT CARD",
+          "style": {
+            "fontSize": "18px",
+            "fontWeight": "bold",
+            "color": "#FF6600"
+          }
+        },
+        {
+          "id": "credit_subtitle",
+          "type": "Text",
+          "text": "FLAT 10% ON SWIGGY + 5% ON ONLINE SPENDS",
+          "style": {
+            "fontSize": "14px",
+            "color": "#FF6600",
+            "marginTop": "4px"
+          }
+        }
+      ]
+    },
+    {
+      "id": "featured_section",
+      "type": "Column",
+      "style": {
+        "margin": "24px 16px",
+        "display": "flex",
+        "flexDirection": "column",
+        "alignItems": "center"
+      },
+      "children": [
+        {
+          "id": "featured_header",
+          "type": "SectionHeader",
+          "text": "FEATURED FOR YOU",
+          "style": {
+            "fontSize": "16px",
+            "fontWeight": "bold",
+            "color": "#666666",
+            "letterSpacing": "1px"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bottom_nav",
+      "type": "BottomNav",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF",
+        "padding": "16px 0",
+        "elevation": "4px"
+      },
+      "children": [
+        {
+          "id": "nav_swiggy",
+          "type": "Tab",
+          "text": "Swiggy",
+          "style": {
+            "color": "#FF6600",
+            "fontSize": "12px",
+            "fontWeight": "bold"
+          }
+        },
+        {
+          "id": "nav_food",
+          "type": "Tab",
+          "text": "Food",
+          "style": {
+            "color": "#888888",
+            "fontSize": "12px"
+          }
+        },
+        {
+          "id": "nav_instamart",
+          "type": "Tab",
+          "text": "Instamart",
+          "style": {
+            "color": "#888888",
+            "fontSize": "12px"
+          }
+        },
+        {
+          "id": "nav_dineout",
+          "type": "Tab",
+          "text": "Dineout",
+          "style": {
+            "color": "#888888",
+            "fontSize": "12px"
+          }
+        },
+        {
+          "id": "nav_card",
+          "type": "Tab",
+          "text": "Card",
+          "style": {
+            "color": "#888888",
+            "fontSize": "12px"
+          }
+        },
+        {
+          "id": "nav_reorder",
+          "type": "Tab",
+          "text": "Reorder",
+          "style": {
+            "color": "#888888",
+            "fontSize": "12px"
+          }
+        }
+      ]
+    }
+  ]
+}

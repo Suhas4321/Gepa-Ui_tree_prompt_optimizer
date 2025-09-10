@@ -1,0 +1,575 @@
+{
+  "id": "google_classroom",
+  "type": "Screen",
+  "style": {
+    "display": "flex",
+    "flexDirection": "column",
+    "backgroundColor": "#1A1A1A"
+  },
+  "children": [
+    {
+      "id": "header",
+      "type": "AppBar",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "backgroundColor": "#1A1A1A",
+        "padding": "16px"
+      },
+      "children": [
+        {
+          "id": "menu_icon",
+          "type": "Icon",
+          "style": {
+            "width": "24px",
+            "height": "24px",
+            "color": "#FFFFFF"
+          }
+        },
+        {
+          "id": "header_actions",
+          "type": "Row",
+          "style": {
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "gap": "16px"
+          },
+          "children": [
+            {
+              "id": "info_icon",
+              "type": "Icon",
+              "style": {
+                "width": "24px",
+                "height": "24px",
+                "color": "#FFFFFF"
+              }
+            },
+            {
+              "id": "more_options",
+              "type": "Icon",
+              "style": {
+                "width": "24px",
+                "height": "24px",
+                "color": "#FFFFFF"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "class_banner",
+      "type": "Banner",
+      "style": {
+        "backgroundColor": "#00BFA5",
+        "borderRadius": "16px",
+        "padding": "32px 24px",
+        "margin": "0 16px 16px",
+        "position": "relative",
+        "overflow": "hidden"
+      },
+      "children": [
+        {
+          "id": "class_info",
+          "type": "Column",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column"
+          },
+          "children": [
+            {
+              "id": "class_title",
+              "type": "Text",
+              "text": "AIML",
+              "style": {
+                "fontSize": "32px",
+                "fontWeight": "bold",
+                "color": "#FFFFFF",
+                "marginBottom": "8px"
+              }
+            },
+            {
+              "id": "class_section",
+              "type": "Text",
+              "text": "B",
+              "style": {
+                "fontSize": "20px",
+                "color": "#FFFFFF"
+              }
+            }
+          ]
+        },
+        {
+          "id": "phone_illustration",
+          "type": "Image",
+          "style": {
+            "position": "absolute",
+            "right": "24px",
+            "top": "50%",
+            "transform": "translateY(-50%)",
+            "width": "120px",
+            "height": "80px",
+            "color": "#333333"
+          }
+        }
+      ]
+    },
+    {
+      "id": "new_announcement_button",
+      "type": "Button",
+      "text": "New announcement",
+      "style": {
+        "backgroundColor": "#1565C0",
+        "color": "#FFFFFF",
+        "borderRadius": "24px",
+        "padding": "16px 24px",
+        "fontSize": "16px",
+        "fontWeight": "500",
+        "margin": "0 16px 24px",
+        "border": "none",
+        "display": "flex",
+        "flexDirection": "row",
+        "alignItems": "center",
+        "gap": "8px"
+      },
+      "children": [
+        {
+          "id": "announcement_icon",
+          "type": "Icon",
+          "style": {
+            "width": "20px",
+            "height": "20px",
+            "color": "#FFFFFF"
+          }
+        }
+      ]
+    },
+    {
+      "id": "posts_section",
+      "type": "Column",
+      "style": {
+        "flex": "1",
+        "gap": "16px",
+        "padding": "0 16px"
+      },
+      "children": [
+        {
+          "id": "first_post",
+          "type": "Card",
+          "style": {
+            "backgroundColor": "#2A2A2A",
+            "borderRadius": "12px",
+            "padding": "16px"
+          },
+          "children": [
+            {
+              "id": "first_post_header",
+              "type": "Row",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "alignItems": "flex-start",
+                "marginBottom": "12px"
+              },
+              "children": [
+                {
+                  "id": "first_post_user_info",
+                  "type": "Row",
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "alignItems": "center",
+                    "gap": "12px"
+                  },
+                  "children": [
+                    {
+                      "id": "first_avatar",
+                      "type": "Avatar",
+                      "text": "S",
+                      "style": {
+                        "width": "40px",
+                        "height": "40px",
+                        "backgroundColor": "#9C27B0",
+                        "borderRadius": "50%",
+                        "color": "#FFFFFF",
+                        "fontSize": "18px",
+                        "textAlign": "center",
+                        "lineHeight": "40px"
+                      }
+                    },
+                    {
+                      "id": "first_user_details",
+                      "type": "Column",
+                      "style": {
+                        "display": "flex",
+                        "flexDirection": "column"
+                      },
+                      "children": [
+                        {
+                          "id": "first_username",
+                          "type": "Text",
+                          "text": "SURESHKUMAR M",
+                          "style": {
+                            "fontSize": "14px",
+                            "fontWeight": "500",
+                            "color": "#FFFFFF"
+                          }
+                        },
+                        {
+                          "id": "first_date",
+                          "type": "Text",
+                          "text": "Feb 27, 2024",
+                          "style": {
+                            "fontSize": "12px",
+                            "color": "#AAAAAA"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "first_post_menu",
+                  "type": "Icon",
+                  "style": {
+                    "width": "20px",
+                    "height": "20px",
+                    "color": "#AAAAAA"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "first_post_content",
+              "type": "Column",
+              "style": {
+                "gap": "12px"
+              },
+              "children": [
+                {
+                  "id": "first_post_title",
+                  "type": "Text",
+                  "text": "AIML Final Marks (Theory-30 + Lab-20)",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#FFFFFF",
+                    "marginBottom": "12px"
+                  }
+                },
+                {
+                  "id": "first_attachment",
+                  "type": "Row",
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "alignItems": "center",
+                    "gap": "12px",
+                    "backgroundColor": "#3A3A3A",
+                    "borderRadius": "8px",
+                    "padding": "12px"
+                  },
+                  "children": [
+                    {
+                      "id": "word_icon",
+                      "type": "Icon",
+                      "style": {
+                        "width": "24px",
+                        "height": "24px",
+                        "backgroundColor": "#2B579A",
+                        "borderRadius": "4px",
+                        "color": "#FFFFFF"
+                      }
+                    },
+                    {
+                      "id": "first_filename",
+                      "type": "Text",
+                      "text": "AIML Final marks.docx",
+                      "style": {
+                        "fontSize": "14px",
+                        "color": "#FFFFFF"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "first_comment_section",
+                  "type": "Text",
+                  "text": "Add class comment",
+                  "style": {
+                    "fontSize": "14px",
+                    "color": "#6BB6FF",
+                    "marginTop": "12px"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "second_post",
+          "type": "Card",
+          "style": {
+            "backgroundColor": "#2A2A2A",
+            "borderRadius": "12px",
+            "padding": "16px"
+          },
+          "children": [
+            {
+              "id": "second_post_header",
+              "type": "Row",
+              "style": {
+                "display": "flex",
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "alignItems": "flex-start",
+                "marginBottom": "12px"
+              },
+              "children": [
+                {
+                  "id": "second_post_user_info",
+                  "type": "Row",
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "alignItems": "center",
+                    "gap": "12px"
+                  },
+                  "children": [
+                    {
+                      "id": "second_avatar",
+                      "type": "Avatar",
+                      "text": "S",
+                      "style": {
+                        "width": "40px",
+                        "height": "40px",
+                        "backgroundColor": "#9C27B0",
+                        "borderRadius": "50%",
+                        "color": "#FFFFFF",
+                        "fontSize": "18px",
+                        "textAlign": "center",
+                        "lineHeight": "40px"
+                      }
+                    },
+                    {
+                      "id": "second_user_details",
+                      "type": "Column",
+                      "style": {
+                        "display": "flex",
+                        "flexDirection": "column"
+                      },
+                      "children": [
+                        {
+                          "id": "second_username",
+                          "type": "Text",
+                          "text": "SURESHKUMAR M",
+                          "style": {
+                            "fontSize": "14px",
+                            "fontWeight": "500",
+                            "color": "#FFFFFF"
+                          }
+                        },
+                        {
+                          "id": "second_date",
+                          "type": "Text",
+                          "text": "Feb 24, 2024",
+                          "style": {
+                            "fontSize": "12px",
+                            "color": "#AAAAAA"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "second_post_menu",
+                  "type": "Icon",
+                  "style": {
+                    "width": "20px",
+                    "height": "20px",
+                    "color": "#AAAAAA"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "second_post_content",
+              "type": "Column",
+              "style": {
+                "gap": "12px"
+              },
+              "children": [
+                {
+                  "id": "second_post_title",
+                  "type": "Text",
+                  "text": "CIE 3 Marks",
+                  "style": {
+                    "fontSize": "16px",
+                    "color": "#FFFFFF",
+                    "marginBottom": "12px"
+                  }
+                },
+                {
+                  "id": "second_attachment",
+                  "type": "Row",
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "alignItems": "center",
+                    "gap": "12px",
+                    "backgroundColor": "#3A3A3A",
+                    "borderRadius": "8px",
+                    "padding": "12px"
+                  },
+                  "children": [
+                    {
+                      "id": "word_icon_2",
+                      "type": "Icon",
+                      "style": {
+                        "width": "24px",
+                        "height": "24px",
+                        "backgroundColor": "#2B579A",
+                        "borderRadius": "4px",
+                        "color": "#FFFFFF"
+                      }
+                    },
+                    {
+                      "id": "second_filename",
+                      "type": "Text",
+                      "text": "AIML cie3 marks.docx",
+                      "style": {
+                        "fontSize": "14px",
+                        "color": "#FFFFFF"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "second_comment_section",
+                  "type": "Text",
+                  "text": "Add class comment",
+                  "style": {
+                    "fontSize": "14px",
+                    "color": "#6BB6FF",
+                    "marginTop": "12px"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bottom_nav",
+      "type": "BottomNav",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+        "alignItems": "center",
+        "backgroundColor": "#1A1A1A",
+        "padding": "16px 0"
+      },
+      "children": [
+        {
+          "id": "nav_stream",
+          "type": "Tab",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "gap": "4px"
+          },
+          "children": [
+            {
+              "id": "stream_icon",
+              "type": "Icon",
+              "style": {
+                "width": "24px",
+                "height": "24px",
+                "backgroundColor": "#1565C0",
+                "borderRadius": "50%",
+                "color": "#FFFFFF",
+                "padding": "4px"
+              }
+            },
+            {
+              "id": "stream_text",
+              "type": "Text",
+              "text": "Stream",
+              "style": {
+                "fontSize": "12px",
+                "color": "#6BB6FF"
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_classwork",
+          "type": "Tab",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "gap": "4px"
+          },
+          "children": [
+            {
+              "id": "classwork_icon",
+              "type": "Icon",
+              "style": {
+                "width": "24px",
+                "height": "24px",
+                "color": "#AAAAAA"
+              }
+            },
+            {
+              "id": "classwork_text",
+              "type": "Text",
+              "text": "Classwork",
+              "style": {
+                "fontSize": "12px",
+                "color": "#AAAAAA"
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_people",
+          "type": "Tab",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "gap": "4px"
+          },
+          "children": [
+            {
+              "id": "people_icon",
+              "type": "Icon",
+              "style": {
+                "width": "24px",
+                "height": "24px",
+                "color": "#AAAAAA"
+              }
+            },
+            {
+              "id": "people_text",
+              "type": "Text",
+              "text": "People",
+              "style": {
+                "fontSize": "12px",
+                "color": "#AAAAAA"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

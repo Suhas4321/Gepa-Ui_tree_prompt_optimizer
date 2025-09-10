@@ -1,0 +1,746 @@
+{
+  "id": "flipkart_top_deals_screen",
+  "type": "Screen",
+  "style": {
+    "display": "flex",
+    "flexDirection": "column",
+    "backgroundColor": "#FFFFFF"
+  },
+  "children": [
+    {
+      "id": "top_bar",
+      "type": "AppBar",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "paddingHorizontal": 16,
+        "paddingVertical": 12,
+        "backgroundColor": "#FFFFFF"
+      },
+      "children": [
+        {
+          "id": "search_text",
+          "type": "Text",
+          "text": "All your deals in one pla...",
+          "style": {
+            "color": "#000000",
+            "fontSize": 16,
+            "flex": 1
+          }
+        },
+        {
+          "id": "search_icon",
+          "type": "Icon",
+          "style": {
+            "color": "#000000",
+            "marginLeft": 16
+          }
+        },
+        {
+          "id": "camera_icon",
+          "type": "Icon",
+          "style": {
+            "color": "#000000",
+            "marginLeft": 16
+          }
+        },
+        {
+          "id": "cart_icon_with_badge",
+          "type": "Row",
+          "style": {
+            "position": "relative",
+            "marginLeft": 16
+          },
+          "children": [
+            {
+              "id": "cart_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#000000"
+              }
+            },
+            {
+              "id": "cart_badge",
+              "type": "Badge",
+              "text": "8",
+              "style": {
+                "backgroundColor": "#FF4444",
+                "color": "#FFFFFF",
+                "borderRadius": 10,
+                "fontSize": 10,
+                "position": "absolute",
+                "top": -8,
+                "right": -8,
+                "paddingHorizontal": 6,
+                "paddingVertical": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "categories_section",
+      "type": "Row",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "paddingHorizontal": 16,
+        "paddingVertical": 12,
+        "gap": 12
+      },
+      "children": [
+        {
+          "id": "cat_for_you",
+          "type": "Column",
+          "style": {
+            "alignItems": "center",
+            "backgroundColor": "#E3F2FD",
+            "borderRadius": 12,
+            "padding": 8,
+            "minWidth": 80
+          },
+          "children": [
+            {
+              "id": "for_you_icon",
+              "type": "Icon",
+              "style": {
+                "backgroundColor": "#FFE57F",
+                "borderRadius": 8,
+                "width": 32,
+                "height": 32,
+                "color": "#F57F17"
+              }
+            },
+            {
+              "id": "for_you_text",
+              "type": "Text",
+              "text": "For you",
+              "style": {
+                "color": "#000000",
+                "fontSize": 12,
+                "marginTop": 4,
+                "fontWeight": "500"
+              }
+            }
+          ]
+        },
+        {
+          "id": "cat_fashion",
+          "type": "Column",
+          "style": {
+            "alignItems": "center",
+            "padding": 8,
+            "minWidth": 80
+          },
+          "children": [
+            {
+              "id": "fashion_icon",
+              "type": "Image",
+              "style": {
+                "width": 32,
+                "height": 32,
+                "borderRadius": 8
+              }
+            },
+            {
+              "id": "fashion_text",
+              "type": "Text",
+              "text": "Fashion",
+              "style": {
+                "color": "#000000",
+                "fontSize": 12,
+                "marginTop": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "cat_mobile",
+          "type": "Column",
+          "style": {
+            "alignItems": "center",
+            "padding": 8,
+            "minWidth": 80
+          },
+          "children": [
+            {
+              "id": "mobile_icon",
+              "type": "Image",
+              "style": {
+                "width": 32,
+                "height": 32,
+                "borderRadius": 8
+              }
+            },
+            {
+              "id": "mobile_text",
+              "type": "Text",
+              "text": "Mobile",
+              "style": {
+                "color": "#000000",
+                "fontSize": 12,
+                "marginTop": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "cat_electronics",
+          "type": "Column",
+          "style": {
+            "alignItems": "center",
+            "padding": 8,
+            "minWidth": 80
+          },
+          "children": [
+            {
+              "id": "electronics_icon",
+              "type": "Image",
+              "style": {
+                "width": 32,
+                "height": 32,
+                "borderRadius": 8
+              }
+            },
+            {
+              "id": "electronics_text",
+              "type": "Text",
+              "text": "Electronics",
+              "style": {
+                "color": "#000000",
+                "fontSize": 12,
+                "marginTop": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "cat_appliances",
+          "type": "Column",
+          "style": {
+            "alignItems": "center",
+            "padding": 8,
+            "minWidth": 80
+          },
+          "children": [
+            {
+              "id": "appliances_icon",
+              "type": "Image",
+              "style": {
+                "width": 32,
+                "height": 32,
+                "borderRadius": 8
+              }
+            },
+            {
+              "id": "appliances_text",
+              "type": "Text",
+              "text": "Appli...",
+              "style": {
+                "color": "#000000",
+                "fontSize": 12,
+                "marginTop": 4
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deals_grid",
+      "type": "Grid",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "padding": 16,
+        "gap": 12
+      },
+      "children": [
+        {
+          "id": "deal_card_1",
+          "type": "Card",
+          "style": {
+            "flex": "0 0 48%",
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 8,
+            "overflow": "hidden",
+            "elevation": 2
+          },
+          "children": [
+            {
+              "id": "deal_1_image",
+              "type": "Image",
+              "style": {
+                "width": "100%",
+                "height": 200,
+                "backgroundColor": "#F5F5F5"
+              }
+            },
+            {
+              "id": "deal_1_content",
+              "type": "Column",
+              "style": {
+                "padding": 8
+              },
+              "children": [
+                {
+                  "id": "deal_1_brand",
+                  "type": "Text",
+                  "text": "KEVAY",
+                  "style": {
+                    "color": "#000000",
+                    "fontWeight": "bold",
+                    "fontSize": 14
+                  }
+                },
+                {
+                  "id": "deal_1_title",
+                  "type": "Text",
+                  "text": "Women Viscose R...",
+                  "style": {
+                    "color": "#666666",
+                    "fontSize": 12,
+                    "marginTop": 2
+                  }
+                },
+                {
+                  "id": "deal_1_price_row",
+                  "type": "Row",
+                  "style": {
+                    "alignItems": "center",
+                    "marginTop": 8
+                  },
+                  "children": [
+                    {
+                      "id": "deal_1_discount",
+                      "type": "Text",
+                      "text": "↓78%",
+                      "style": {
+                        "color": "#4CAF50",
+                        "fontWeight": "bold",
+                        "fontSize": 12
+                      }
+                    },
+                    {
+                      "id": "deal_1_original_price",
+                      "type": "Text",
+                      "text": "2,199",
+                      "style": {
+                        "color": "#999999",
+                        "fontSize": 12,
+                        "textDecorationLine": "line-through",
+                        "marginLeft": 8
+                      }
+                    },
+                    {
+                      "id": "deal_1_price",
+                      "type": "Text",
+                      "text": "₹482",
+                      "style": {
+                        "color": "#000000",
+                        "fontWeight": "bold",
+                        "fontSize": 16,
+                        "marginLeft": 8
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "deal_card_2",
+          "type": "Card",
+          "style": {
+            "flex": "0 0 48%",
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 8,
+            "overflow": "hidden",
+            "elevation": 2
+          },
+          "children": [
+            {
+              "id": "deal_2_image",
+              "type": "Image",
+              "style": {
+                "width": "100%",
+                "height": 200,
+                "backgroundColor": "#F5F5F5"
+              }
+            },
+            {
+              "id": "deal_2_content",
+              "type": "Column",
+              "style": {
+                "padding": 8
+              },
+              "children": [
+                {
+                  "id": "deal_2_brand",
+                  "type": "Text",
+                  "text": "BULLSTORM",
+                  "style": {
+                    "color": "#000000",
+                    "fontWeight": "bold",
+                    "fontSize": 14
+                  }
+                },
+                {
+                  "id": "deal_2_title",
+                  "type": "Text",
+                  "text": "ULTRAPOD ...",
+                  "style": {
+                    "color": "#666666",
+                    "fontSize": 12,
+                    "marginTop": 2
+                  }
+                },
+                {
+                  "id": "deal_2_price_row",
+                  "type": "Row",
+                  "style": {
+                    "alignItems": "center",
+                    "marginTop": 8
+                  },
+                  "children": [
+                    {
+                      "id": "deal_2_discount",
+                      "type": "Text",
+                      "text": "↓90%",
+                      "style": {
+                        "color": "#4CAF50",
+                        "fontWeight": "bold",
+                        "fontSize": 12
+                      }
+                    },
+                    {
+                      "id": "deal_2_original_price",
+                      "type": "Text",
+                      "text": "2,899",
+                      "style": {
+                        "color": "#999999",
+                        "fontSize": 12,
+                        "textDecorationLine": "line-through",
+                        "marginLeft": 8
+                      }
+                    },
+                    {
+                      "id": "deal_2_price",
+                      "type": "Text",
+                      "text": "₹295",
+                      "style": {
+                        "color": "#000000",
+                        "fontWeight": "bold",
+                        "fontSize": 16,
+                        "marginLeft": 8
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "deal_card_3",
+          "type": "Card",
+          "style": {
+            "flex": "0 0 48%",
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 8,
+            "overflow": "hidden",
+            "elevation": 2,
+            "position": "relative"
+          },
+          "children": [
+            {
+              "id": "lowest_price_badge_1",
+              "type": "Chip",
+              "text": "Lowest Price",
+              "style": {
+                "backgroundColor": "#9C27B0",
+                "color": "#FFFFFF",
+                "fontSize": 10,
+                "position": "absolute",
+                "top": 8,
+                "left": 8,
+                "paddingHorizontal": 8,
+                "paddingVertical": 4,
+                "borderRadius": 4,
+                "zIndex": 1
+              }
+            },
+            {
+              "id": "deal_3_image",
+              "type": "Image",
+              "style": {
+                "width": "100%",
+                "height": 200,
+                "backgroundColor": "#F5F5F5"
+              }
+            },
+            {
+              "id": "deal_3_rating",
+              "type": "Row",
+              "style": {
+                "position": "absolute",
+                "bottom": 8,
+                "left": 8,
+                "backgroundColor": "#4CAF50",
+                "borderRadius": 4,
+                "paddingHorizontal": 6,
+                "paddingVertical": 2,
+                "alignItems": "center"
+              },
+              "children": [
+                {
+                  "id": "rating_value",
+                  "type": "Text",
+                  "text": "4.2",
+                  "style": {
+                    "color": "#FFFFFF",
+                    "fontSize": 10,
+                    "fontWeight": "bold"
+                  }
+                },
+                {
+                  "id": "rating_star",
+                  "type": "Icon",
+                  "style": {
+                    "color": "#FFFFFF",
+                    "fontSize": 8,
+                    "marginLeft": 2
+                  }
+                },
+                {
+                  "id": "rating_count",
+                  "type": "Text",
+                  "text": "(4,006)",
+                  "style": {
+                    "color": "#FFFFFF",
+                    "fontSize": 8,
+                    "marginLeft": 2
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "deal_card_4",
+          "type": "Card",
+          "style": {
+            "flex": "0 0 48%",
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 8,
+            "overflow": "hidden",
+            "elevation": 2,
+            "position": "relative"
+          },
+          "children": [
+            {
+              "id": "lowest_price_badge_2",
+              "type": "Chip",
+              "text": "Lowest Price",
+              "style": {
+                "backgroundColor": "#9C27B0",
+                "color": "#FFFFFF",
+                "fontSize": 10,
+                "position": "absolute",
+                "top": 8,
+                "left": 8,
+                "paddingHorizontal": 8,
+                "paddingVertical": 4,
+                "borderRadius": 4,
+                "zIndex": 1
+              }
+            },
+            {
+              "id": "deal_4_image",
+              "type": "Image",
+              "style": {
+                "width": "100%",
+                "height": 200,
+                "backgroundColor": "#F5F5F5"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bottom_navigation",
+      "type": "BottomNav",
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+        "alignItems": "center",
+        "paddingVertical": 12,
+        "backgroundColor": "#FFFFFF",
+        "borderTopWidth": 1,
+        "borderTopColor": "#E0E0E0"
+      },
+      "children": [
+        {
+          "id": "nav_home",
+          "type": "Tab",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center"
+          },
+          "children": [
+            {
+              "id": "home_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#666666"
+              }
+            },
+            {
+              "id": "home_text",
+              "type": "Text",
+              "text": "Home",
+              "style": {
+                "color": "#666666",
+                "fontSize": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_play",
+          "type": "Tab",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center"
+          },
+          "children": [
+            {
+              "id": "play_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#666666"
+              }
+            },
+            {
+              "id": "play_text",
+              "type": "Text",
+              "text": "Play",
+              "style": {
+                "color": "#666666",
+                "fontSize": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_top_deals",
+          "type": "Tab",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center"
+          },
+          "children": [
+            {
+              "id": "top_deals_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#2874F0"
+              }
+            },
+            {
+              "id": "top_deals_text",
+              "type": "Text",
+              "text": "Top Deals",
+              "style": {
+                "color": "#2874F0",
+                "fontSize": 10,
+                "fontWeight": "500"
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_account",
+          "type": "Tab",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center"
+          },
+          "children": [
+            {
+              "id": "account_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#666666"
+              }
+            },
+            {
+              "id": "account_text",
+              "type": "Text",
+              "text": "Account",
+              "style": {
+                "color": "#666666",
+                "fontSize": 10
+              }
+            }
+          ]
+        },
+        {
+          "id": "nav_cart",
+          "type": "Tab",
+          "style": {
+            "display": "flex",
+            "flexDirection": "column",
+            "alignItems": "center",
+            "position": "relative"
+          },
+          "children": [
+            {
+              "id": "cart_nav_icon",
+              "type": "Icon",
+              "style": {
+                "color": "#666666"
+              }
+            },
+            {
+              "id": "cart_text",
+              "type": "Text",
+              "text": "Cart",
+              "style": {
+                "color": "#666666",
+                "fontSize": 10
+              }
+            },
+            {
+              "id": "cart_nav_badge",
+              "type": "Badge",
+              "text": "8",
+              "style": {
+                "backgroundColor": "#FF4444",
+                "color": "#FFFFFF",
+                "borderRadius": 10,
+                "fontSize": 8,
+                "position": "absolute",
+                "top": -4,
+                "right": 8,
+                "paddingHorizontal": 4,
+                "paddingVertical": 2
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+# config.yaml
+
+# 📂 File and Directory Paths
+paths:
+  screenshots_dir: "screenshots"
+  json_dir: "json_tree"
+  output_dir: "results"
+
+# 📊 Dataset Splitting Configuration
+dataset:
+  train_ratio: 0.7 
+  val_ratio: 0.3
+  random_state: 42
+
+# 🧠 Language Model Configuration
+llm:
+  model_name: "gpt-4o" 
+  max_tokens: 4096
+
+# 🧬 GEPA Optimization Parameters
+gepa_params:
+  reflection_lm: "openai/gpt-4-turbo" 
+  max_metric_calls: 75 
+
+# 📊 Evaluation Metric Weights
+metric_weights:
+  structural_similarity: 0.4
+  element_type_accuracy: 0.3
+  spatial_accuracy: 0.1
+  text_content_accuracy: 0.1
+  completeness_score: 0.1
+
+# 📝 Logging Configuration
+logging:
+  log_file: "optimization_run.log"
+  log_level: "INFO"
